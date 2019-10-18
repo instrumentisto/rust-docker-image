@@ -1,0 +1,25 @@
+#!/bin/bash
+# Docker Hub post-push hook that is responsible to tag built image properly.
+
+set -e
+
+# Parse image name and tag.
+tagStart=$(expr index "$IMAGE_NAME" :)
+repoName=${IMAGE_NAME:0:tagStart-1}
+origTag=${IMAGE_NAME:tagStart}
+
+# Re-push nightly images from official rustlang/rust repo with preserving
+# concrete nightly version.
+if [[ "$origTag" == "nightly-buster" ]]; then
+  upstreamRepo=rustlang/rust
+
+  docker pull $upstreamRepo:$origTag
+  dateVer=$(docker run --rm $upstreamRepo:$origTag rustc -V \
+                                                   | cut -d ' ' -f4 \
+                                                   | tr -d "\n )")
+
+  for tag in {$origTag-$dateVer,$origTag,nightly-$dateVer,nightly}; do
+    docker tag $upstreamRepo:$origTag $repoName:$tag
+    docker push $repoName:$tag
+  done
+fi
