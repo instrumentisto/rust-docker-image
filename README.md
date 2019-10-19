@@ -42,7 +42,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 
 > [rust-lang.org](https://rust-lang.org)
 
-> [wikipedia.org/wiki/Rust_(programming_language)](https://wikipedia.org/wiki/Rust_(programming_language)
+> [wikipedia.org/wiki/Rust_(programming_language)](https://wikipedia.org/wiki/Rust_(programming_language))
 
 ![Rust Logo](https://raw.githubusercontent.com/docker-library/docs/a11c341c57de07fbccfed7b21ea92d4bc40130a2/rust/logo.png)
 
