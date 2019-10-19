@@ -16,22 +16,22 @@ Consider to use [official `rust` Docker image][1].
 
 ### beta
 
-- `beta`, `1.39.0-beta`, `1.39.0-beta.$n`, `beta-buster`, `1.39.0-beta-buster`, `1.39.0-beta.$n-buster` [(Dockerfile)][201]
-- `beta-slim`, `1.39.0-beta-slim`, `1.39.0-beta.$n-slim`, `beta-buster-slim`, `1.39.0-beta-buster-slim`, `1.39.0-beta.$n-buster-slim` [(Dockerfile)][202]
-- `beta-stretch`, `1.39.0-beta-stretch`, `1.39.0-beta.$n-stretch` [(Dockerfile)][203]
-- `beta-stretch-slim`, `1.39.0-beta-stretch-slim`, `1.39.0-beta.$n-stretch-slim` [(Dockerfile)][204]
-- `beta-alpine`, `1.39.0-beta-alpine`, `1.39.0-beta.$n-alpine`, `beta-alpine3.10`, `1.39.0-beta-alpine3.10`, `1.39.0-beta.$n-alpine3.10` [(Dockerfile)][205]
+- [`beta`, `1.39.0-beta`, `1.39.0-beta.$n`, `beta-buster`, `1.39.0-beta-buster`, `1.39.0-beta.$n-buster`][201]
+- [`beta-slim`, `1.39.0-beta-slim`, `1.39.0-beta.$n-slim`, `beta-buster-slim`, `1.39.0-beta-buster-slim`, `1.39.0-beta.$n-buster-slim`][202]
+- [`beta-stretch`, `1.39.0-beta-stretch`, `1.39.0-beta.$n-stretch`][203]
+- [`beta-stretch-slim`, `1.39.0-beta-stretch-slim`, `1.39.0-beta.$n-stretch-slim`][204]
+- [`beta-alpine`, `1.39.0-beta-alpine`, `1.39.0-beta.$n-alpine`, `beta-alpine3.10`, `1.39.0-beta-alpine3.10`, `1.39.0-beta.$n-alpine3.10`][205]
 
 
 ### nightly
 
 These images mirror [official `rustlang/rust:nightly` Docker images][2], but preserve versions for each date.
 
-- `nightly`, `nightly-$date`, `nightly-buster`, `nightly-buster-$date` [(Dockerfile)][101]
-- `nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date` [(Dockerfile)][102]
-- `nightly-stretch`, `nightly-stretch-$date` [(Dockerfile)][103]
-- `nightly-stretch-slim`, `nightly-stretch-slim-$date` [(Dockerfile)][104]
-- `nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.10`, `nightly-alpine3.10-$date` [(Dockerfile)][105]
+- [`nightly`, `nightly-$date`, `nightly-buster`, `nightly-buster-$date`][101]
+- [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][102]
+- [`nightly-stretch`, `nightly-stretch-$date`][103]
+- [`nightly-stretch-slim`, `nightly-stretch-slim-$date`][104]
+- [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.10`, `nightly-alpine3.10-$date`][105]
 
 
 
