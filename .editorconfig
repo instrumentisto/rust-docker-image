@@ -16,6 +16,10 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 4
 
-[post_push]
+[{post_push, *.sh}]
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml}]
 indent_style = space
 indent_size = 2

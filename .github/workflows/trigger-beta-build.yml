@@ -1,0 +1,30 @@
+name: Trigger beta images build
+
+on:
+  schedule:
+    - cron: '10 5 * * *'
+  #push:
+  #  branches: ["dev"]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        os:
+          - alpine3.10
+          - buster
+          - buster-slim
+          - stretch
+          - stretch-slim
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          ref: ${{ github.ref }}
+
+      - run: bash ./check-and-trigger-beta-builds.sh
+        env:
+          IMAGE_OS: ${{ matrix.os }}
+          TRIGGER_TOKEN: ${{ secrets.BETA_TRIGGER_TOKEN }}
