@@ -20,7 +20,7 @@ if [[ "$origTag" == "nightly-$fullOs" ]]; then
                                                    | cut -d ' ' -f4 \
                                                    | tr -d "\n )")
 
-  for os in {-$fullOs}; do
+  for os in {-$fullOs,}; do
     for ver in {-$dateVer,""}; do
       tag=nightly$os$ver
       docker tag $upstreamRepo:$origTag $repoName:$tag
