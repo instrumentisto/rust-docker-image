@@ -158,11 +158,11 @@ If you have any problems with or questions about this image, please contact us t
 [32]: https://github.com/instrumentisto/rust-docker-image/blob/master/LICENSE.md
 [33]: https://github.com/instrumentisto/rust-docker-image/issues
 
-[101]: https://github.com/rust-lang-nursery/docker-rust-nightly/blob/master/buster/Dockerfile
-[102]: https://github.com/rust-lang-nursery/docker-rust-nightly/blob/master/buster/slim/Dockerfile
-[103]: https://github.com/rust-lang-nursery/docker-rust-nightly/blob/master/stretch/Dockerfile
-[104]: https://github.com/rust-lang-nursery/docker-rust-nightly/tree/master/stretch/slim
-[105]: https://github.com/rust-lang-nursery/docker-rust-nightly/blob/master/alpine3.10/Dockerfile
+[101]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/Dockerfile
+[102]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/slim/Dockerfile
+[103]: https://github.com/rust-lang/docker-rust-nightly/blob/master/stretch/Dockerfile
+[104]: https://github.com/rust-lang/docker-rust-nightly/tree/master/stretch/slim
+[105]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine3.10/Dockerfile
 
 [201]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster/Dockerfile
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
