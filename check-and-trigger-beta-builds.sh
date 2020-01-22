@@ -30,8 +30,7 @@ echo "--> Latest image version: $latestImageVer"
 if [ "rustc $currentToolchainVer" != "$latestImageVer" ]; then
   curl -sS -H "Content-Type: application/json" \
        --data "{\"build\":true,\"docker_tag\":\"beta-$IMAGE_OS\"}" \
-       -X POST \
-         https://cloud.docker.com/api/build/v1/source/$TRIGGER_TOKEN/call/ \
+       -X POST https://hub.docker.com/api/build/v1/source/$TRIGGER_TOKEN/call/ \
     >/dev/null \
   && echo "--> Build trigerred"
 else
