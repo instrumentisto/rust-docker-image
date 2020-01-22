@@ -8,7 +8,7 @@ tagStart=$(expr index "$IMAGE_NAME" :)
 repoName=${IMAGE_NAME:0:tagStart-1}
 origTag=${IMAGE_NAME:tagStart}
 
-fullOs=alpine3.10
+fullOs=alpine3.11
 
 # Re-tag beta images.
 if [[ "$origTag" == "beta-$fullOs" ]]; then
@@ -18,7 +18,7 @@ if [[ "$origTag" == "beta-$fullOs" ]]; then
   numVer=$(echo "$fullVer" | cut -d '-' -f1 | tr -d "\n ")
 
   for ver in {$fullVer,$numVer-beta,beta}; do
-    for os in {-$fullOs,}; do
+    for os in {-$fullOs,-alpine}; do
       tag=$ver$os
       docker tag $repoName:$origTag $repoName:$tag
       docker push $repoName:$tag
