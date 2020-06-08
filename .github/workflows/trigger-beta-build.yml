@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         os:
-          - alpine3.10
           - alpine3.11
+          - alpine3.12
           - buster
           - buster-slim
           - stretch

@@ -18,7 +18,7 @@ if [[ "$origTag" == "beta-$fullOs" ]]; then
   numVer=$(echo "$fullVer" | cut -d '-' -f1 | tr -d "\n ")
 
   for ver in {$fullVer,$numVer-beta,beta}; do
-    for os in {-$fullOs,-alpine}; do
+    for os in {-$fullOs,}; do
       tag=$ver$os
       docker tag $repoName:$origTag $repoName:$tag
       docker push $repoName:$tag

@@ -20,8 +20,8 @@ Consider to use [official `rust` Docker image][1].
 - [`beta-slim`, `1.45.0-beta-slim`, `1.45.0-beta.$n-slim`, `beta-buster-slim`, `1.45.0-beta-buster-slim`, `1.45.0-beta.$n-buster-slim`][202]
 - [`beta-stretch`, `1.45.0-beta-stretch`, `1.45.0-beta.$n-stretch`][203]
 - [`beta-stretch-slim`, `1.45.0-beta-stretch-slim`, `1.45.0-beta.$n-stretch-slim`][204]
-- [`beta-alpine`, `1.45.0-beta-alpine`, `1.45.0-beta.$n-alpine`, `beta-alpine3.11`, `1.45.0-beta-alpine3.11`, `1.45.0-beta.$n-alpine3.11`][205]
-- [`beta-alpine3.10`, `1.45.0-beta-alpine3.10`, `1.45.0-beta.$n-alpine3.10`][206]
+- [`beta-alpine`, `1.45.0-beta-alpine`, `1.45.0-beta.$n-alpine`, `beta-alpine3.12`, `1.45.0-beta-alpine3.12`, `1.45.0-beta.$n-alpine3.12`][205]
+- [`beta-alpine3.11`, `1.45.0-beta-alpine3.11`, `1.45.0-beta.$n-alpine3.11`][206]
 
 
 ### nightly
@@ -169,5 +169,5 @@ If you have any problems with or questions about this image, please contact us t
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
-[205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.11/Dockerfile
-[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.10/Dockerfile
+[205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
+[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.11/Dockerfile
