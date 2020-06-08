@@ -32,7 +32,7 @@ These images mirror [official `rustlang/rust:nightly` Docker images][2], but pre
 - [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][102]
 - [`nightly-stretch`, `nightly-stretch-$date`][103]
 - [`nightly-stretch-slim`, `nightly-stretch-slim-$date`][104]
-- [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.10`, `nightly-alpine3.10-$date`][105]
+- [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.12`, `nightly-alpine3.12-$date`][105]
 
 
 
@@ -163,7 +163,7 @@ If you have any problems with or questions about this image, please contact us t
 [102]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/slim/Dockerfile
 [103]: https://github.com/rust-lang/docker-rust-nightly/blob/master/stretch/Dockerfile
 [104]: https://github.com/rust-lang/docker-rust-nightly/tree/master/stretch/slim
-[105]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine3.10/Dockerfile
+[105]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine3.12/Dockerfile
 
 [201]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster/Dockerfile
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile

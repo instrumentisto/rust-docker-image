@@ -8,7 +8,7 @@ tagStart=$(expr index "$IMAGE_NAME" :)
 repoName=${IMAGE_NAME:0:tagStart-1}
 origTag=${IMAGE_NAME:tagStart}
 
-fullOs=alpine3.10
+fullOs=alpine3.12
 
 # Re-push nightly images from official rustlang/rust repo with preserving
 # concrete nightly version.
