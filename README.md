@@ -16,12 +16,12 @@ Consider to use [official `rust` Docker image][1].
 
 ### beta
 
-- [`beta`, `1.48.0-beta`, `1.48.0-beta.$n`, `beta-buster`, `1.48.0-beta-buster`, `1.48.0-beta.$n-buster`][201]
-- [`beta-slim`, `1.48.0-beta-slim`, `1.48.0-beta.$n-slim`, `beta-buster-slim`, `1.48.0-beta-buster-slim`, `1.48.0-beta.$n-buster-slim`][202]
-- [`beta-stretch`, `1.48.0-beta-stretch`, `1.48.0-beta.$n-stretch`][203]
-- [`beta-stretch-slim`, `1.48.0-beta-stretch-slim`, `1.48.0-beta.$n-stretch-slim`][204]
-- [`beta-alpine`, `1.48.0-beta-alpine`, `1.48.0-beta.$n-alpine`, `beta-alpine3.12`, `1.48.0-beta-alpine3.12`, `1.48.0-beta.$n-alpine3.12`][205]
-- [`beta-alpine3.11`, `1.48.0-beta-alpine3.11`, `1.48.0-beta.$n-alpine3.11`][206]
+- [`beta`, `1.49.0-beta`, `1.49.0-beta.$n`, `beta-buster`, `1.49.0-beta-buster`, `1.49.0-beta.$n-buster`][201]
+- [`beta-slim`, `1.49.0-beta-slim`, `1.49.0-beta.$n-slim`, `beta-buster-slim`, `1.49.0-beta-buster-slim`, `1.49.0-beta.$n-buster-slim`][202]
+- [`beta-stretch`, `1.49.0-beta-stretch`, `1.49.0-beta.$n-stretch`][203]
+- [`beta-stretch-slim`, `1.49.0-beta-stretch-slim`, `1.49.0-beta.$n-stretch-slim`][204]
+- [`beta-alpine`, `1.49.0-beta-alpine`, `1.49.0-beta.$n-alpine`, `beta-alpine3.12`, `1.49.0-beta-alpine3.12`, `1.49.0-beta.$n-alpine3.12`][205]
+- [`beta-alpine3.11`, `1.49.0-beta-alpine3.11`, `1.49.0-beta.$n-alpine3.11`][206]
 
 
 ### nightly
