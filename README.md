@@ -11,7 +11,12 @@ Rust Docker Image
 
 ### stable
 
-Consider to use [official `rust` Docker image][1].
+Mirrors [official `rust` Docker images][1].
+
+- [`1-buster`, `1.48-buster`, `1.48.0-buster`, `buster`, `1`, `1.48`, `1.48.0`, `latest`][301]
+- [`1-slim-buster`, `1.48-slim-buster`, `1.48.0-slim-buster`, `slim-buster`, `1-slim`, `1.48-slim`, `1.48.0-slim`, `slim`][302]
+- [`1-alpine3.11`, `1.48-alpine3.11`, `1.48.0-alpine3.11`, `alpine3.11`][303]
+- [`1-alpine3.12`, `1.48-alpine3.12`, `1.48.0-alpine3.12`, `alpine3.12`, `1-alpine`, `1.48-alpine`, `1.48.0-alpine`, `alpine`][304]
 
 
 ### beta
@@ -169,3 +174,8 @@ If you have any problems with or questions about this image, please contact us t
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
+
+[301]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/buster/Dockerfile
+[302]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/buster/slim/Dockerfile
+[303]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/alpine3.11/Dockerfile
+[304]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/alpine3.12/Dockerfile
