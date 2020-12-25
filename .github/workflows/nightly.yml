@@ -1,0 +1,86 @@
+name: Nightly CI
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+env:
+  REGISTRIES: ghcr.io,docker.io,quay.io
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - os: alpine3.12
+            tags: |
+              nightly-alpine3.12-<ver>
+              nightly-alpine-<ver>
+              nightly-alpine3.12
+              nightly-alpine
+          - os: buster
+            tags: |
+              nightly-buster-<ver>
+              nightly-<ver>
+              nightly-buster
+              nightly
+          - os: buster-slim
+            tags: |
+              nightly-buster-slim-<ver>
+              nightly-slim-<ver>
+              nightly-buster-slim
+              nightly-slim
+          - os: stretch
+            tags: |
+              nightly-stretch-<ver>
+              nightly-stretch
+          - os: stretch-slim
+            tags: |
+              nightly-stretch-slim-<ver>
+              nightly-stretch-slim
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check upstream manifests changed
+        id: upstream
+        run: echo ::set-output name=RESULT::$(bash nightly/check-changed.sh)
+        env:
+          IMAGE_OS: ${{ matrix.os }}
+
+      - name: Login to GitHub Container Registry
+        run: sudo skopeo login --username=${{ github.repository_owner }}
+                               --password='${{ secrets.GCR_BOT_PAT }}'
+                         ghcr.io
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Login to Quay.io
+        run: sudo skopeo login --username=instrumentisto+bot
+                               --password='${{ secrets.QUAYIO_ROBOT_TOKEN }}'
+                         quay.io
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Login to Docker Hub
+        run: sudo skopeo login --username=instrumentistobot
+                               --password='${{ secrets.DOCKERHUB_BOT_PASS }}'
+                         docker.io
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+
+      - name: Copy image
+        run: bash nightly/copy.sh
+        env:
+          IMAGE_OS: ${{ matrix.os }}
+          IMAGE_TAGS: ${{ matrix.tags }}
+          IMAGE_REPOS: ${{ env.REGISTRIES }}
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+
+      - name: Logout from GitHub Container Registry
+        run: sudo skopeo logout ghcr.io
+        if: ${{ always()
+                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Logout from Quay.io
+        run: sudo skopeo logout quay.io
+        if: ${{ always()
+                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Logout from Docker Hub
+        run: sudo skopeo logout docker.io
+        if: ${{ always()
+                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
