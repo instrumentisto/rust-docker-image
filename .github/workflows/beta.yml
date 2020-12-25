@@ -1,0 +1,96 @@
+name: Beta CI
+
+on:
+  schedule:
+    - cron: '10 5 * * *'
+
+env:
+  REGISTRIES: ghcr.io,docker.io,quay.io
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - os: alpine3.12
+            tags: |
+              <full-ver>-alpine3.12
+              <full-ver>-alpine
+              <num-ver>-beta-alpine3.12
+              <num-ver>-beta-alpine
+              beta-alpine3.12
+              beta-alpine
+          - os: buster
+            tags: |
+              <full-ver>-buster
+              <full-ver>
+              <num-ver>-beta-buster
+              <num-ver>-beta
+              beta-buster
+              beta
+          - os: buster-slim
+            tags: |
+              <full-ver>-buster-slim
+              <full-ver>-slim
+              <num-ver>-beta-buster-slim
+              <num-ver>-beta-slim
+              beta-buster-slim
+              beta-slim
+          - os: stretch
+            tags: |
+              <full-ver>-stretch
+              <num-ver>-beta-stretch
+              beta-stretch
+          - os: stretch-slim
+            tags: |
+              <full-ver>-stretch-slim
+              <num-ver>-beta-stretch-slim
+              beta-stretch-slim
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check upstream version changed
+        id: upstream
+        run: echo ::set-output name=RESULT::$(bash beta/check-changed.sh)
+        env:
+          IMAGE_OS: ${{ matrix.os }}
+
+      - uses: docker/setup-buildx-action@v1
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+
+      - name: Build image
+        run: docker build --network=host --force-rm --no-cache --pull
+                    -t instrumentisto/rust:build
+                    ./beta/${{ matrix.os }}/
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GCR_BOT_PAT }}
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Login to Quay.io
+        uses: docker/login-action@v1
+        with:
+          registry: quay.io
+          username: instrumentisto+bot
+          password: ${{ secrets.QUAYIO_ROBOT_TOKEN }}
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: instrumentistobot
+          password: ${{ secrets.DOCKERHUB_BOT_PASS }}
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+
+      - name: Push images
+        run: bash beta/push.sh
+        env:
+          IMAGE_OS: ${{ matrix.os }}
+          IMAGE_TAGS: ${{ matrix.tags }}
+          IMAGE_REPOS: ${{ env.REGISTRIES }}
+        if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
