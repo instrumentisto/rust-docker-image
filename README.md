@@ -21,12 +21,11 @@ Consider to use [official `rust` Docker image][1].
 - [`beta-stretch`, `1.49.0-beta-stretch`, `1.49.0-beta.$n-stretch`][203]
 - [`beta-stretch-slim`, `1.49.0-beta-stretch-slim`, `1.49.0-beta.$n-stretch-slim`][204]
 - [`beta-alpine`, `1.49.0-beta-alpine`, `1.49.0-beta.$n-alpine`, `beta-alpine3.12`, `1.49.0-beta-alpine3.12`, `1.49.0-beta.$n-alpine3.12`][205]
-- [`beta-alpine3.11`, `1.49.0-beta-alpine3.11`, `1.49.0-beta.$n-alpine3.11`][206]
 
 
 ### nightly
 
-These images mirror [official `rustlang/rust:nightly` Docker images][2], but preserve versions for each date.
+Mirrors [official `rustlang/rust:nightly` Docker images][2], but preserves versions for each date.
 
 - [`nightly`, `nightly-$date`, `nightly-buster`, `nightly-buster-$date`][101]
 - [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][102]
@@ -170,4 +169,3 @@ If you have any problems with or questions about this image, please contact us t
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
-[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.11/Dockerfile
