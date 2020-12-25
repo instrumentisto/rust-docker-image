@@ -1,0 +1,30 @@
+name: README CI
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # On GitHub Container Registry README is automatically updated on pushes.
+      - name: Update README on Quay.io
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_APIKEY: ${{ secrets.QUAYIO_API_TOKEN }}
+        with:
+          provider: quay
+          destination_container_repo: quay.io/instrumentisto/rust
+          readme_file: README.md
+      - name: Update README on Docker Hub
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_USER: instrumentistobot
+          DOCKER_PASS: ${{ secrets.DOCKERHUB_BOT_PASS }}
+        with:
+          provider: dockerhub
+          destination_container_repo: instrumentisto/rust
+          readme_file: README.md

@@ -1,5 +1,8 @@
 FROM debian:buster-slim
 
+LABEL org.opencontainers.image.source="\
+    https://github.com/instrumentisto/rust-docker-image"
+
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH
