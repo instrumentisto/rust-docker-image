@@ -6,6 +6,7 @@ on:
 
 env:
   REGISTRIES: ghcr.io,docker.io,quay.io
+  REGISTRY_AUTH_FILE: ./auth.json
 
 jobs:
   copy:
@@ -49,19 +50,19 @@ jobs:
           IMAGE_OS: ${{ matrix.os }}
 
       - name: Login to GitHub Container Registry
-        run: sudo skopeo login --username=${{ github.repository_owner }}
-                               --password='${{ secrets.GCR_BOT_PAT }}'
-                         ghcr.io
+        run: skopeo login --username=${{ github.repository_owner }}
+                          --password='${{ secrets.GCR_BOT_PAT }}'
+                    ghcr.io
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Login to Quay.io
-        run: sudo skopeo login --username=instrumentisto+bot
-                               --password='${{ secrets.QUAYIO_ROBOT_TOKEN }}'
-                         quay.io
+        run: skopeo login --username=instrumentisto+bot
+                          --password='${{ secrets.QUAYIO_ROBOT_TOKEN }}'
+                    quay.io
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Login to Docker Hub
-        run: sudo skopeo login --username=instrumentistobot
-                               --password='${{ secrets.DOCKERHUB_BOT_PASS }}'
-                         docker.io
+        run: skopeo login --username=instrumentistobot
+                          --password='${{ secrets.DOCKERHUB_BOT_PASS }}'
+                    docker.io
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 
       - name: Copy image
@@ -73,14 +74,14 @@ jobs:
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 
       - name: Logout from GitHub Container Registry
-        run: sudo skopeo logout ghcr.io
+        run: skopeo logout ghcr.io
         if: ${{ always()
                 && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Logout from Quay.io
-        run: sudo skopeo logout quay.io
+        run: skopeo logout quay.io
         if: ${{ always()
                 && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Logout from Docker Hub
-        run: sudo skopeo logout docker.io
+        run: skopeo logout docker.io
         if: ${{ always()
                 && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}

@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # On GitHub Container Registry README is automatically updated on pushes.
+      # On GitHub Container Registry README is automatically updated
+      # on beta images pushes.
       - name: Update README on Quay.io
         uses: christian-korneck/update-container-description-action@v1
         env:
