@@ -3,6 +3,10 @@ Rust Docker Image
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/instrumentisto/rust.svg)](https://hub.docker.com/r/instrumentisto/rust)
 
+[Docker Hub](https://hub.docker.com/r/instrumentisto/rust)
+| [GitHub Container Registry](https://github.com/orgs/instrumentisto/packages/container/package/rust)
+| [Quay.io](https://quay.io/repository/instrumentisto/rust)
+
 
 
 
