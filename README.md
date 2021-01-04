@@ -17,19 +17,19 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-buster`, `1.48-buster`, `1.48.0-buster`, `buster`, `1`, `1.48`, `1.48.0`, `latest`][301]
-- [`1-slim-buster`, `1.48-slim-buster`, `1.48.0-slim-buster`, `slim-buster`, `1-slim`, `1.48-slim`, `1.48.0-slim`, `slim`][302]
-- [`1-alpine3.11`, `1.48-alpine3.11`, `1.48.0-alpine3.11`, `alpine3.11`][303]
-- [`1-alpine3.12`, `1.48-alpine3.12`, `1.48.0-alpine3.12`, `alpine3.12`, `1-alpine`, `1.48-alpine`, `1.48.0-alpine`, `alpine`][304]
+- [`1-buster`, `1.49-buster`, `1.49.0-buster`, `buster`, `1`, `1.49`, `1.49.0`, `latest`][301]
+- [`1-slim-buster`, `1.49-slim-buster`, `1.49.0-slim-buster`, `slim-buster`, `1-slim`, `1.49-slim`, `1.49.0-slim`, `slim`][302]
+- [`1-alpine3.11`, `1.49-alpine3.11`, `1.49.0-alpine3.11`, `alpine3.11`][303]
+- [`1-alpine3.12`, `1.49-alpine3.12`, `1.49.0-alpine3.12`, `alpine3.12`, `1-alpine`, `1.49-alpine`, `1.49.0-alpine`, `alpine`][304]
 
 
 ### beta
 
-- [`beta`, `1.49.0-beta`, `1.49.0-beta.$n`, `beta-buster`, `1.49.0-beta-buster`, `1.49.0-beta.$n-buster`][201]
-- [`beta-slim`, `1.49.0-beta-slim`, `1.49.0-beta.$n-slim`, `beta-buster-slim`, `1.49.0-beta-buster-slim`, `1.49.0-beta.$n-buster-slim`][202]
-- [`beta-stretch`, `1.49.0-beta-stretch`, `1.49.0-beta.$n-stretch`][203]
-- [`beta-stretch-slim`, `1.49.0-beta-stretch-slim`, `1.49.0-beta.$n-stretch-slim`][204]
-- [`beta-alpine`, `1.49.0-beta-alpine`, `1.49.0-beta.$n-alpine`, `beta-alpine3.12`, `1.49.0-beta-alpine3.12`, `1.49.0-beta.$n-alpine3.12`][205]
+- [`beta`, `1.50.0-beta`, `1.50.0-beta.$n`, `beta-buster`, `1.50.0-beta-buster`, `1.50.0-beta.$n-buster`][201]
+- [`beta-slim`, `1.50.0-beta-slim`, `1.50.0-beta.$n-slim`, `beta-buster-slim`, `1.50.0-beta-buster-slim`, `1.50.0-beta.$n-buster-slim`][202]
+- [`beta-stretch`, `1.50.0-beta-stretch`, `1.50.0-beta.$n-stretch`][203]
+- [`beta-stretch-slim`, `1.50.0-beta-stretch-slim`, `1.50.0-beta.$n-stretch-slim`][204]
+- [`beta-alpine`, `1.50.0-beta-alpine`, `1.50.0-beta.$n-alpine`, `beta-alpine3.12`, `1.50.0-beta-alpine3.12`, `1.50.0-beta.$n-alpine3.12`][205]
 
 
 ### nightly
@@ -179,7 +179,7 @@ If you have any problems with or questions about this image, please contact us t
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
 
-[301]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/buster/Dockerfile
-[302]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/buster/slim/Dockerfile
-[303]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/alpine3.11/Dockerfile
-[304]: https://github.com/rust-lang/docker-rust/blob/master/1.48.0/alpine3.12/Dockerfile
+[301]: https://github.com/rust-lang/docker-rust/blob/master/1.49.0/buster/Dockerfile
+[302]: https://github.com/rust-lang/docker-rust/blob/master/1.49.0/buster/slim/Dockerfile
+[303]: https://github.com/rust-lang/docker-rust/blob/master/1.49.0/alpine3.11/Dockerfile
+[304]: https://github.com/rust-lang/docker-rust/blob/master/1.49.0/alpine3.12/Dockerfile
