@@ -18,8 +18,9 @@ currentToolchainVer=$(grep -A1 '\[pkg.rustc]' channel-rust-beta.toml \
                       | tr -d "\n")
 echo "--> Current toolchain version: rustc $currentToolchainVer"
 
-docker pull instrumentisto/rust:beta-$IMAGE_OS || echo 'none'
-latestImageVer=$((docker run --rm instrumentisto/rust:beta-$IMAGE_OS rustc -V \
+docker pull ghcr.io/instrumentisto/rust:beta-$IMAGE_OS || echo 'none'
+latestImageVer=$((docker run --rm ghcr.io/instrumentisto/rust:beta-$IMAGE_OS \
+                         rustc -V \
                   || echo '"none"') \
                  | tr -d "\n")
 echo "--> Latest image version: $latestImageVer"

@@ -16,7 +16,7 @@ upstream=$(skopeo inspect \
 echo "--> Upstream image manifests: $upstream"
 
 latest=$((skopeo inspect \
-                 --raw docker://docker.io/instrumentisto/rust:nightly-$IMAGE_OS\
+                 --raw docker://ghcr.io/instrumentisto/rust:nightly-$IMAGE_OS \
           || echo '"none"') \
          | jq -c '.')
 echo "--> Latest image manifests: $latest"
