@@ -13,14 +13,19 @@ jobs:
     strategy:
       matrix:
         include:
+          - os: alpine3.13
+            tags: |
+              <full-ver>-alpine3.13
+              <full-ver>-alpine
+              <num-ver>-beta-alpine3.13
+              <num-ver>-beta-alpine
+              beta-alpine3.13
+              beta-alpine
           - os: alpine3.12
             tags: |
               <full-ver>-alpine3.12
-              <full-ver>-alpine
               <num-ver>-beta-alpine3.12
-              <num-ver>-beta-alpine
               beta-alpine3.12
-              beta-alpine
           - os: buster
             tags: |
               <full-ver>-buster
