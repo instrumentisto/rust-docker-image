@@ -19,18 +19,22 @@ Mirrors [official `rust` Docker images][1].
 
 - [`1-buster`, `1.51-buster`, `1.51.0-buster`, `buster`, `1`, `1.51`, `1.51.0`, `latest`][301]
 - [`1-slim-buster`, `1.51-slim-buster`, `1.51.0-slim-buster`, `slim-buster`, `1-slim`, `1.51-slim`, `1.51.0-slim`, `slim`][302]
-- [`1-alpine3.12`, `1.51-alpine3.12`, `1.51.0-alpine3.12`, `alpine3.12`][303]
-- [`1-alpine3.13`, `1.51-alpine3.13`, `1.51.0-alpine3.13`, `alpine3.13`, `1-alpine`, `1.51-alpine`, `1.51.0-alpine`, `alpine`][304]
+- [`1-bullseye`, `1.51-bullseye`, `1.51.0-bullseye`, `bullseye`][303]
+- [`1-slim-bullseye`, `1.51-slim-bullseye`, `1.51.0-slim-bullseye`, `slim-bullseye`][304]
+- [`1-alpine3.12`, `1.51-alpine3.12`, `1.51.0-alpine3.12`, `alpine3.12`][305]
+- [`1-alpine3.13`, `1.51-alpine3.13`, `1.51.0-alpine3.13`, `alpine3.13`, `1-alpine`, `1.51-alpine`, `1.51.0-alpine`, `alpine`][306]
 
 
 ### beta
 
 - [`beta`, `1.52.0-beta`, `1.52.0-beta.$n`, `beta-buster`, `1.52.0-beta-buster`, `1.52.0-beta.$n-buster`][201]
 - [`beta-slim`, `1.52.0-beta-slim`, `1.52.0-beta.$n-slim`, `beta-buster-slim`, `1.52.0-beta-buster-slim`, `1.52.0-beta.$n-buster-slim`][202]
-- [`beta-stretch`, `1.52.0-beta-stretch`, `1.52.0-beta.$n-stretch`][203]
-- [`beta-stretch-slim`, `1.52.0-beta-stretch-slim`, `1.52.0-beta.$n-stretch-slim`][204]
-- [`beta-alpine`, `1.52.0-beta-alpine`, `1.52.0-beta.$n-alpine`, `beta-alpine3.13`, `1.52.0-beta-alpine3.13`, `1.52.0-beta.$n-alpine3.13`][205]
-- [`beta-alpine3.12`, `1.52.0-beta-alpine3.12`, `1.52.0-beta.$n-alpine3.12`][206]
+- [`beta-bullseye`, `1.52.0-beta-bullseye`, `1.52.0-beta.$n-bullseye`][203]
+- [`beta-bullseye-slim`, `1.52.0-beta-bullseye-slim`, `1.52.0-beta.$n-bullseye-slim`][204]
+- [`beta-stretch`, `1.52.0-beta-stretch`, `1.52.0-beta.$n-stretch`][205]
+- [`beta-stretch-slim`, `1.52.0-beta-stretch-slim`, `1.52.0-beta.$n-stretch-slim`][206]
+- [`beta-alpine`, `1.52.0-beta-alpine`, `1.52.0-beta.$n-alpine`, `beta-alpine3.13`, `1.52.0-beta-alpine3.13`, `1.52.0-beta.$n-alpine3.13`][207]
+- [`beta-alpine3.12`, `1.52.0-beta-alpine3.12`, `1.52.0-beta.$n-alpine3.12`][208]
 
 
 ### nightly
@@ -176,12 +180,16 @@ If you have any problems with or questions about this image, please contact us t
 
 [201]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster/Dockerfile
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
-[203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
-[204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
-[205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.13/Dockerfile
-[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
+[203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye/Dockerfile
+[204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye-slim/Dockerfile
+[205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
+[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
+[207]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.13/Dockerfile
+[208]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
 
 [301]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/buster/Dockerfile
 [302]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/buster/slim/Dockerfile
-[303]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/alpine3.12/Dockerfile
-[304]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/alpine3.13/Dockerfile
+[303]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/bullseye/Dockerfile
+[304]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/bullseye/slim/Dockerfile
+[305]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/alpine3.12/Dockerfile
+[306]: https://github.com/rust-lang/docker-rust/blob/master/1.51.0/alpine3.13/Dockerfile

@@ -26,6 +26,16 @@ jobs:
               <full-ver>-alpine3.12
               <num-ver>-beta-alpine3.12
               beta-alpine3.12
+          - os: bullseye
+            tags: |
+              <full-ver>-bullseye
+              <num-ver>-beta-bullseye
+              beta-bullseye
+          - os: bullseye-slim
+            tags: |
+              <full-ver>-bullseye-slim
+              <num-ver>-beta-bullseye-slim
+              beta-bullseye-slim
           - os: buster
             tags: |
               <full-ver>-buster

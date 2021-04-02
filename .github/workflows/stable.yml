@@ -30,6 +30,18 @@ jobs:
               <minor-ver>-alpine3.12
               <major-ver>-alpine3.12
               alpine3.12
+          - os: bullseye
+            tags: |
+              <full-ver>-bullseye
+              <minor-ver>-bullseye
+              <major-ver>-bullseye
+              bullseye
+          - os: slim-bullseye
+            tags: |
+              <full-ver>-slim-bullseye
+              <minor-ver>-slim-bullseye
+              <major-ver>-slim-bullseye
+              slim-bullseye
           - os: buster
             tags: |
               <full-ver>-buster
