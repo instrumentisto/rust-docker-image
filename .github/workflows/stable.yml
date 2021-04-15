@@ -73,7 +73,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         run: skopeo login --username=${{ github.repository_owner }}
-                          --password='${{ secrets.GCR_BOT_PAT }}'
+                          --password='${{ secrets.GITHUB_TOKEN }}'
                     ghcr.io
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Login to Quay.io
