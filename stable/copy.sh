@@ -19,9 +19,9 @@ fi
 set -e
 
 runCmd \
-  podman pull rust:$IMAGE_OS
+  podman pull docker.io/rust:$IMAGE_OS
 
-fullVer=$(podman run --rm rust:$IMAGE_OS rustc -V \
+fullVer=$(podman run --rm docker.io/rust:$IMAGE_OS rustc -V \
           | cut -d ' ' -f2 \
           | tr -d "\n )")
 majorVer=$(printf "$fullVer" | cut -d '.' -f1)

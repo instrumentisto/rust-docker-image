@@ -19,9 +19,9 @@ fi
 set -e
 
 runCmd \
-  podman pull rustlang/rust:nightly-$IMAGE_OS
+  podman pull docker.io/rustlang/rust:nightly-$IMAGE_OS
 
-ver=$(podman run --rm rustlang/rust:nightly-$IMAGE_OS rustc -V \
+ver=$(podman run --rm docker.io/rustlang/rust:nightly-$IMAGE_OS rustc -V \
       | cut -d ' ' -f4 \
       | tr -d "\n )")
 tags=$(printf "$IMAGE_TAGS" | sed "s/<ver>/$ver/g" | tr ',' "\n")
