@@ -87,6 +87,14 @@ jobs:
                     docker.io
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 
+      # https://github.com/containers/podman/issues/10112
+      - name: Fix Podman's containers storage
+        run: |
+          sudo apt-get install fuse-overlayfs
+          mkdir -vp ~/.config/containers
+          printf "[storage.options]\nmount_program=\"/usr/bin/fuse-overlayfs\""\
+                 > ~/.config/containers/storage.conf
+
       - name: Copy image
         run: bash stable/copy.sh
         env:
