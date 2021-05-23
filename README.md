@@ -31,8 +31,6 @@ Mirrors [official `rust` Docker images][1].
 - [`beta-slim`, `1.53.0-beta-slim`, `1.53.0-beta.$n-slim`, `beta-buster-slim`, `1.53.0-beta-buster-slim`, `1.53.0-beta.$n-buster-slim`][202]
 - [`beta-bullseye`, `1.53.0-beta-bullseye`, `1.53.0-beta.$n-bullseye`][203]
 - [`beta-bullseye-slim`, `1.53.0-beta-bullseye-slim`, `1.53.0-beta.$n-bullseye-slim`][204]
-- [`beta-stretch`, `1.53.0-beta-stretch`, `1.53.0-beta.$n-stretch`][205]
-- [`beta-stretch-slim`, `1.53.0-beta-stretch-slim`, `1.53.0-beta.$n-stretch-slim`][206]
 - [`beta-alpine`, `1.53.0-beta-alpine`, `1.53.0-beta.$n-alpine`, `beta-alpine3.13`, `1.53.0-beta-alpine3.13`, `1.53.0-beta.$n-alpine3.13`][207]
 - [`beta-alpine3.12`, `1.53.0-beta-alpine3.12`, `1.53.0-beta.$n-alpine3.12`][208]
 
@@ -182,8 +180,6 @@ If you have any problems with or questions about this image, please contact us t
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye-slim/Dockerfile
-[205]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch/Dockerfile
-[206]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/stretch-slim/Dockerfile
 [207]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.13/Dockerfile
 [208]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.12/Dockerfile
 

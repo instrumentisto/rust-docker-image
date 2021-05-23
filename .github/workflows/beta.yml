@@ -52,16 +52,6 @@ jobs:
               <num-ver>-beta-slim
               beta-buster-slim
               beta-slim
-          - os: stretch
-            tags: |
-              <full-ver>-stretch
-              <num-ver>-beta-stretch
-              beta-stretch
-          - os: stretch-slim
-            tags: |
-              <full-ver>-stretch-slim
-              <num-ver>-beta-stretch-slim
-              beta-stretch-slim
     steps:
       - uses: actions/checkout@v2
 
