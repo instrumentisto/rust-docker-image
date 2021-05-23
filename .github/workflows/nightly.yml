@@ -32,14 +32,14 @@ jobs:
               nightly-slim-<ver>
               nightly-buster-slim
               nightly-slim
-          - os: stretch
+          - os: bullseye
             tags: |
-              nightly-stretch-<ver>
-              nightly-stretch
-          - os: stretch-slim
+              nightly-bullseye-<ver>
+              nightly-bullseye
+          - os: bullseye-slim
             tags: |
-              nightly-stretch-slim-<ver>
-              nightly-stretch-slim
+              nightly-bullseye-slim-<ver>
+              nightly-bullseye-slim
     steps:
       - uses: actions/checkout@v2
 
