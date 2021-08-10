@@ -11,7 +11,7 @@ set -e
 
 
 upstream=$(skopeo inspect \
-                  --raw docker://docker.io/rustlang/rust:nightly-$IMAGE_OS \
+                  --raw docker://ghcr.io/rust-lang/rust:nightly-$IMAGE_OS \
            | jq -c '.')
 echo "--> Upstream image manifests: $upstream"
 

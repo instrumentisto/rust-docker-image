@@ -37,7 +37,7 @@ Mirrors [official `rust` Docker images][1].
 
 ### nightly
 
-Mirrors [official `rustlang/rust:nightly` Docker images][2], but preserves versions for each date.
+Mirrors [official `ghcr.io/rust-lang/rust:nightly` Docker images][2], but preserves versions for each date.
 
 - [`nightly`, `nightly-$date`, `nightly-buster`, `nightly-buster-$date`][101]
 - [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][102]
@@ -154,7 +154,7 @@ If you have any problems with or questions about this image, please contact us t
 
 
 [1]: https://hub.docker.com/_/rust
-[2]: https://hub.docker.com/r/rustlang/rust
+[2]: https://github.com/rust-lang/docker-rust-nightly/pkgs/container/rust
 [3]: https://www.rust-lang.org/en-US/legal.html
 
 [11]: https://wiki.debian.org/DebianReleases
