@@ -21,8 +21,8 @@ Mirrors [official `rust` Docker images][1].
 - [`1-slim-buster`, `1.57-slim-buster`, `1.57.0-slim-buster`, `slim-buster`, `1-slim`, `1.57-slim`, `1.57.0-slim`, `slim`][302]
 - [`1-bullseye`, `1.57-bullseye`, `1.57.0-bullseye`, `bullseye`][303]
 - [`1-slim-bullseye`, `1.57-slim-bullseye`, `1.57.0-slim-bullseye`, `slim-bullseye`][304]
-- [`1-alpine3.12`, `1.57-alpine3.12`, `1.57.0-alpine3.12`, `alpine3.12`][305]
-- [`1-alpine3.13`, `1.57-alpine3.13`, `1.57.0-alpine3.13`, `alpine3.13`, `1-alpine`, `1.57-alpine`, `1.57.0-alpine`, `alpine`][306]
+- [`1-alpine3.14`, `1.57-alpine3.14`, `1.57.0-alpine3.14`, `alpine3.14`][305]
+- [`1-alpine3.15`, `1.57-alpine3.15`, `1.57.0-alpine3.15`, `alpine3.15`, `1-alpine`, `1.57-alpine`, `1.57.0-alpine`, `alpine`][306]
 
 
 ### beta
@@ -187,5 +187,5 @@ If you have any problems with or questions about this image, please contact us t
 [302]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/buster/slim/Dockerfile
 [303]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/bullseye/Dockerfile
 [304]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/bullseye/slim/Dockerfile
-[305]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/alpine3.12/Dockerfile
-[306]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/alpine3.13/Dockerfile
+[305]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/alpine3.14/Dockerfile
+[306]: https://github.com/rust-lang/docker-rust/blob/master/1.57.0/alpine3.15/Dockerfile
