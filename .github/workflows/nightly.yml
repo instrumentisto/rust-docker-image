@@ -14,12 +14,16 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: alpine3.12
+          - os: alpine3.15
             tags: |
-              nightly-alpine3.12-<ver>
+              nightly-alpine3.15-<ver>
               nightly-alpine-<ver>
-              nightly-alpine3.12
+              nightly-alpine3.15
               nightly-alpine
+          - os: alpine3.14
+            tags: |
+              nightly-alpine3.14-<ver>
+              nightly-alpine3.14
           - os: buster
             tags: |
               nightly-buster-<ver>
