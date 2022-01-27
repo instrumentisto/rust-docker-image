@@ -40,11 +40,11 @@ Mirrors [official `rust` Docker images][1].
 Mirrors [official `ghcr.io/rust-lang/rust:nightly` Docker images][2], but preserves versions for each date.
 
 - [`nightly`, `nightly-$date`, `nightly-buster`, `nightly-buster-$date`][101]
-- [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][102]
-- [`nightly-bullseye`, `nightly-bullseye-$date`][103]
-- [`nightly-bullseye-slim`, `nightly-bullseye-slim-$date`][104]
-- [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.15`, `nightly-alpine3.15-$date`][105]
-- [`nightly-alpine3.14`, `nightly-alpine3.14-$date`][105]
+- [`nightly-slim`, `nightly-slim-$date`, `nightly-buster-slim`, `nightly-buster-slim-$date`][101]
+- [`nightly-bullseye`, `nightly-bullseye-$date`][102]
+- [`nightly-bullseye-slim`, `nightly-bullseye-slim-$date`][102]
+- [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.15`, `nightly-alpine3.15-$date`][103]
+- [`nightly-alpine3.14`, `nightly-alpine3.14-$date`][103]
 
 
 
@@ -172,10 +172,8 @@ If you have any problems with or questions about this image, please contact us t
 [33]: https://github.com/instrumentisto/rust-docker-image/issues
 
 [101]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/Dockerfile
-[102]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/slim/Dockerfile
-[103]: https://github.com/rust-lang/docker-rust-nightly/blob/master/bullseye/Dockerfile
-[104]: https://github.com/rust-lang/docker-rust-nightly/tree/master/bullseye/slim
-[105]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine/Dockerfile
+[102]: https://github.com/rust-lang/docker-rust-nightly/blob/master/bullseye/Dockerfile
+[103]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine/Dockerfile
 
 [201]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster/Dockerfile
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
