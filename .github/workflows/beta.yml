@@ -2,7 +2,7 @@ name: Beta CI
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: "*/20 * * * *"
 
 env:
   REGISTRIES: ghcr.io,docker.io,quay.io
@@ -53,7 +53,7 @@ jobs:
               beta-buster-slim
               beta-slim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Check upstream version changed
         id: upstream

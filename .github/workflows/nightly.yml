@@ -2,7 +2,7 @@ name: Nightly CI
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
 
 env:
   REGISTRIES: ghcr.io,docker.io,quay.io
@@ -45,7 +45,7 @@ jobs:
               nightly-bullseye-slim-<ver>
               nightly-bullseye-slim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Check upstream manifests changed
         id: upstream

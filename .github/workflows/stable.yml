@@ -2,7 +2,7 @@ name: Stable CI
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
 
 env:
   REGISTRIES: ghcr.io,docker.io,quay.io
@@ -63,7 +63,7 @@ jobs:
               slim-buster
               slim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Check upstream manifests changed
         id: upstream
