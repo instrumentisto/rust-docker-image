@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.16
 
 LABEL org.opencontainers.image.source="\
     https://github.com/instrumentisto/rust-docker-image"
