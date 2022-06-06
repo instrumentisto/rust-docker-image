@@ -14,22 +14,22 @@ jobs:
     strategy:
       matrix:
         include:
+          - os: alpine3.16
+            tags: |
+              <full-ver>-alpine3.16
+              <full-ver>-alpine
+              <minor-ver>-alpine3.16
+              <minor-ver>-alpine
+              <major-ver>-alpine3.16
+              <major-ver>-alpine
+              alpine3.16
+              alpine
           - os: alpine3.15
             tags: |
               <full-ver>-alpine3.15
-              <full-ver>-alpine
               <minor-ver>-alpine3.15
-              <minor-ver>-alpine
               <major-ver>-alpine3.15
-              <major-ver>-alpine
               alpine3.15
-              alpine
-          - os: alpine3.14
-            tags: |
-              <full-ver>-alpine3.14
-              <minor-ver>-alpine3.14
-              <major-ver>-alpine3.14
-              alpine3.14
           - os: bullseye
             tags: |
               <full-ver>-bullseye
