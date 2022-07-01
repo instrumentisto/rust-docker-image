@@ -6,12 +6,16 @@ runCmd() {
 }
 
 
+if [ -z "$IMAGE" ]; then
+  echo "error: No IMAGE env var provided"
+  exit 1
+fi
 if [ -z "$IMAGE_OS" ]; then
   echo "error: No IMAGE_OS env var provided"
   exit 1
 fi
 if [ -z "$IMAGE_TAGS" ]; then
-  echo "error: No $IMAGE_TAGS env var provided"
+  echo "error: No IMAGE_TAGS env var provided"
   exit 1
 fi
 
@@ -25,12 +29,9 @@ ver=$(podman run --rm ghcr.io/rust-lang/rust:nightly-$IMAGE_OS rustc -V \
       | cut -d ' ' -f4 \
       | tr -d "\n )")
 tags=$(printf "$IMAGE_TAGS" | sed "s/<ver>/$ver/g" | tr ',' "\n")
-repos=$(printf "$IMAGE_REPOS" | tr ',' "\n")
 
 for tag in $tags; do
-  for repo in $repos; do
-    runCmd \
-      skopeo copy --all "docker://ghcr.io/rust-lang/rust:nightly-$IMAGE_OS" \
-                        "docker://$repo/instrumentisto/rust:$tag"
-  done
+  runCmd \
+    skopeo copy --all "docker://ghcr.io/rust-lang/rust:nightly-$IMAGE_OS" \
+                      "docker://$IMAGE:$tag"
 done

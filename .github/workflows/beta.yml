@@ -81,14 +81,14 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: quay.io
-          username: instrumentisto+bot
+          username: ${{ secrets.QUAYIO_ROBOT_USER }}
           password: ${{ secrets.QUAYIO_ROBOT_TOKEN }}
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           registry: docker.io
-          username: instrumentistobot
+          username: ${{ secrets.DOCKERHUB_BOT_USER }}
           password: ${{ secrets.DOCKERHUB_BOT_PASS }}
         if: ${{ contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 

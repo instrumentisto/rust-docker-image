@@ -18,14 +18,14 @@ jobs:
           DOCKER_APIKEY: ${{ secrets.QUAYIO_API_TOKEN }}
         with:
           provider: quay
-          destination_container_repo: quay.io/instrumentisto/rust
+          destination_container_repo: quay.io/${{ github.repository_owner }}/rust
           readme_file: README.md
       - name: Update README on Docker Hub
         uses: christian-korneck/update-container-description-action@v1
         env:
-          DOCKER_USER: instrumentistobot
+          DOCKER_USER: ${{ secrets.DOCKERHUB_BOT_USER }}
           DOCKER_PASS: ${{ secrets.DOCKERHUB_BOT_PASS }}
         with:
           provider: dockerhub
-          destination_container_repo: instrumentisto/rust
+          destination_container_repo: ${{ github.repository_owner }}/rust
           readme_file: README.md
