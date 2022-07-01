@@ -15,6 +15,13 @@ jobs:
       fail-fast: false
       matrix:
         registry: ["ghcr.io", "docker.io", "quay.io"]
+        os:
+          - alpine3.15
+          - alpine3.14
+          - buster
+          - buster-slim
+          - bullseye
+          - bullseye-slim
         include:
           - os: alpine3.15
             tags: |
