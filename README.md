@@ -168,19 +168,19 @@ If you have any problems with or questions about this image, please contact us t
 [25]: https://news.ycombinator.com/item?id=10782897
 
 [31]: https://github.com/instrumentisto/rust-docker-image
-[32]: https://github.com/instrumentisto/rust-docker-image/blob/master/LICENSE.md
+[32]: https://github.com/instrumentisto/rust-docker-image/blob/main/LICENSE.md
 [33]: https://github.com/instrumentisto/rust-docker-image/issues
 
 [101]: https://github.com/rust-lang/docker-rust-nightly/blob/master/buster/Dockerfile
 [102]: https://github.com/rust-lang/docker-rust-nightly/blob/master/bullseye/Dockerfile
 [103]: https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine/Dockerfile
 
-[201]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster/Dockerfile
-[202]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/buster-slim/Dockerfile
-[203]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye/Dockerfile
-[204]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/bullseye-slim/Dockerfile
-[207]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.16/Dockerfile
-[208]: https://github.com/instrumentisto/rust-docker-image/blob/master/beta/alpine3.15/Dockerfile
+[201]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/buster/Dockerfile
+[202]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/buster-slim/Dockerfile
+[203]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye/Dockerfile
+[204]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye-slim/Dockerfile
+[207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.16/Dockerfile
+[208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.15/Dockerfile
 
 [301]: https://github.com/rust-lang/docker-rust/blob/master/1.61.0/buster/Dockerfile
 [302]: https://github.com/rust-lang/docker-rust/blob/master/1.61.0/buster/slim/Dockerfile
