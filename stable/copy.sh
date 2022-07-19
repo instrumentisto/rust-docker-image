@@ -6,12 +6,16 @@ runCmd() {
 }
 
 
+if [ -z "$IMAGE" ]; then
+  echo "error: No IMAGE env var provided"
+  exit 1
+fi
 if [ -z "$IMAGE_OS" ]; then
   echo "error: No IMAGE_OS env var provided"
   exit 1
 fi
 if [ -z "$IMAGE_TAGS" ]; then
-  echo "error: No $IMAGE_TAGS env var provided"
+  echo "error: No IMAGE_TAGS env var provided"
   exit 1
 fi
 
@@ -31,12 +35,9 @@ tags=$(printf "$IMAGE_TAGS" | sed "s/<full-ver>/$fullVer/g" \
                             | sed "s/<minor-ver>/$minorVer/g" \
                             | sed "s/<major-ver>/$majorVer/g" \
                             | tr ',' "\n")
-repos=$(printf "$IMAGE_REPOS" | tr ',' "\n")
 
 for tag in $tags; do
-  for repo in $repos; do
-    runCmd \
-      skopeo copy --all "docker://docker.io/rust:$IMAGE_OS" \
-                        "docker://$repo/instrumentisto/rust:$tag"
-  done
+  runCmd \
+    skopeo copy --all "docker://docker.io/rust:$IMAGE_OS" \
+                      "docker://$IMAGE:$tag"
 done

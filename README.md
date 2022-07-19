@@ -17,10 +17,10 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-buster`, `1.62-buster`, `1.62.0-buster`, `buster`, `1`, `1.62`, `1.62.0`, `latest`][301]
-- [`1-slim-buster`, `1.62-slim-buster`, `1.62.0-slim-buster`, `slim-buster`, `1-slim`, `1.62-slim`, `1.62.0-slim`, `slim`][302]
-- [`1-bullseye`, `1.62-bullseye`, `1.62.0-bullseye`, `bullseye`][303]
-- [`1-slim-bullseye`, `1.62-slim-bullseye`, `1.62.0-slim-bullseye`, `slim-bullseye`][304]
+- [`1-buster`, `1.62-buster`, `1.62.0-buster`, `buster`][301]
+- [`1-slim-buster`, `1.62-slim-buster`, `1.62.0-slim-buster`, `slim-buster`][302]
+- [`1-bullseye`, `1.62-bullseye`, `1.62.0-bullseye`, `bullseye`, `1`, `1.62`, `1.62.0`, `latest`][303]
+- [`1-slim-bullseye`, `1.62-slim-bullseye`, `1.62.0-slim-bullseye`, `slim-bullseye`, `1-slim`, `1.62-slim`, `1.62.0-slim`, `slim`][304]
 - [`1-alpine3.15`, `1.62-alpine3.15`, `1.62.0-alpine3.15`, `alpine3.15`][305]
 - [`1-alpine3.16`, `1.62-alpine3.16`, `1.62.0-alpine3.16`, `alpine3.16`, `1-alpine`, `1.62-alpine`, `1.62.0-alpine`, `alpine`][306]
 

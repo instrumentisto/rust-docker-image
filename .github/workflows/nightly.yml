@@ -88,7 +88,7 @@ jobs:
                                        || secrets.GITHUB_TOKEN }}'
                     ${{ matrix.registry }}
         if: ${{ steps.skip.outputs.no == 'true'
-                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 
       - name: Copy image
         run: bash nightly/copy.sh
@@ -97,10 +97,10 @@ jobs:
           IMAGE_OS: ${{ matrix.os }}
           IMAGE_TAGS: ${{ matrix.tags }}
         if: ${{ steps.skip.outputs.no == 'true'
-                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
 
       - name: Logout from ${{ matrix.registry }} container registry
         run: skopeo logout ${{ matrix.registry }}
         if: ${{ always()
-                && steps.skip.outputs.no == 'true'
-                && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && steps.skip.outputs.no == 'true'
+             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
