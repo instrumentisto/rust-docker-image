@@ -27,12 +27,12 @@ Mirrors [official `rust` Docker images][1].
 
 ### beta
 
-- [`beta`, `1.64.0-beta`, `1.64.0-beta.$n`, `beta-buster`, `1.64.0-beta-buster`, `1.64.0-beta.$n-buster`][201]
-- [`beta-slim`, `1.64.0-beta-slim`, `1.64.0-beta.$n-slim`, `beta-buster-slim`, `1.64.0-beta-buster-slim`, `1.64.0-beta.$n-buster-slim`][202]
-- [`beta-bullseye`, `1.64.0-beta-bullseye`, `1.64.0-beta.$n-bullseye`][203]
-- [`beta-bullseye-slim`, `1.64.0-beta-bullseye-slim`, `1.64.0-beta.$n-bullseye-slim`][204]
-- [`beta-alpine`, `1.64.0-beta-alpine`, `1.64.0-beta.$n-alpine`, `beta-alpine3.16`, `1.64.0-beta-alpine3.16`, `1.64.0-beta.$n-alpine3.16`][207]
-- [`beta-alpine3.15`, `1.64.0-beta-alpine3.15`, `1.64.0-beta.$n-alpine3.15`][208]
+- [`beta`, `1.65.0-beta`, `1.65.0-beta.$n`, `beta-buster`, `1.65.0-beta-buster`, `1.65.0-beta.$n-buster`][201]
+- [`beta-slim`, `1.65.0-beta-slim`, `1.65.0-beta.$n-slim`, `beta-buster-slim`, `1.65.0-beta-buster-slim`, `1.65.0-beta.$n-buster-slim`][202]
+- [`beta-bullseye`, `1.65.0-beta-bullseye`, `1.65.0-beta.$n-bullseye`][203]
+- [`beta-bullseye-slim`, `1.65.0-beta-bullseye-slim`, `1.65.0-beta.$n-bullseye-slim`][204]
+- [`beta-alpine`, `1.65.0-beta-alpine`, `1.65.0-beta.$n-alpine`, `beta-alpine3.16`, `1.65.0-beta-alpine3.16`, `1.65.0-beta.$n-alpine3.16`][207]
+- [`beta-alpine3.15`, `1.65.0-beta-alpine3.15`, `1.65.0-beta.$n-alpine3.15`][208]
 
 
 ### nightly
