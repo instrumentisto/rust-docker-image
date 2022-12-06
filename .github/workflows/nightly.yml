@@ -56,20 +56,21 @@ jobs:
     steps:
       # Skip if this is fork and no credentials are provided.
       - id: skip
-        run: echo ::set-output name=no::${{ !(
+        run: echo "no=${{ !(
                github.repository_owner != 'instrumentisto'
                && ((matrix.registry == 'quay.io'
                     && secrets.QUAYIO_ROBOT_USER == '')
                 || (matrix.registry == 'docker.io'
                     && secrets.DOCKERHUB_BOT_USER == ''))
-             ) }}
+             ) }}" >> $GITHUB_OUTPUT
 
       - uses: actions/checkout@v3
         if: ${{ steps.skip.outputs.no == 'true' }}
 
       - name: Check upstream manifests changed
         id: upstream
-        run: echo ::set-output name=RESULT::$(bash nightly/check-changed.sh)
+        run: echo "result=$(bash nightly/check-changed.sh)"
+             >> $GITHUB_OUTPUT
         env:
           IMAGE: ${{ matrix.registry }}/${{ github.repository_owner }}/${{ env.NAME }}
           IMAGE_OS: ${{ matrix.os }}
@@ -88,7 +89,7 @@ jobs:
                                        || secrets.GITHUB_TOKEN }}'
                     ${{ matrix.registry }}
         if: ${{ steps.skip.outputs.no == 'true'
-             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && contains(steps.upstream.outputs.result, 'CHANGED') }}
 
       - name: Copy image
         run: bash nightly/copy.sh
@@ -97,10 +98,10 @@ jobs:
           IMAGE_OS: ${{ matrix.os }}
           IMAGE_TAGS: ${{ matrix.tags }}
         if: ${{ steps.skip.outputs.no == 'true'
-             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && contains(steps.upstream.outputs.result, 'CHANGED') }}
 
       - name: Logout from ${{ matrix.registry }} container registry
         run: skopeo logout ${{ matrix.registry }}
         if: ${{ always()
              && steps.skip.outputs.no == 'true'
-             && contains(steps.upstream.outputs.RESULT, 'CHANGED') }}
+             && contains(steps.upstream.outputs.result, 'CHANGED') }}
