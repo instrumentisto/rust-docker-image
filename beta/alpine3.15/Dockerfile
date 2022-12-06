@@ -1,8 +1,5 @@
 FROM alpine:3.15
 
-LABEL org.opencontainers.image.source="\
-    https://github.com/instrumentisto/rust-docker-image"
-
 RUN apk add --no-cache \
         ca-certificates \
         gcc

@@ -10,7 +10,6 @@ env:
 
 jobs:
   copy:
-    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -71,6 +70,7 @@ jobs:
               <minor-ver>-slim-buster
               <major-ver>-slim-buster
               slim-buster
+    runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
       - id: skip

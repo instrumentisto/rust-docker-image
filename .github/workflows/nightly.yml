@@ -10,7 +10,6 @@ env:
 
 jobs:
   copy:
-    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -53,6 +52,7 @@ jobs:
             tags: |
               nightly-bullseye-slim-<ver>
               nightly-bullseye-slim
+    runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
       - id: skip
