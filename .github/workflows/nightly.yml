@@ -69,8 +69,10 @@ jobs:
 
       - name: Check upstream manifests changed
         id: upstream
-        run: echo "result=$(bash nightly/check-changed.sh)"
-             >> $GITHUB_OUTPUT
+        run: |
+          result=$(bash nightly/check-changed.sh 2>&1)
+          echo "$result"
+          echo 'result<<EOF'$'\n'"$result"$'\n'EOF >> $GITHUB_OUTPUT
         env:
           IMAGE: ${{ matrix.registry }}/${{ github.repository_owner }}/${{ env.NAME }}
           IMAGE_OS: ${{ matrix.os }}
