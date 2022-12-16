@@ -119,25 +119,25 @@ jobs:
                     && secrets.DOCKERHUB_BOT_USER == ''))
              ) }}" >> $GITHUB_OUTPUT
 
-      - name: Check image was built
+      - name: Check new image was built
         id: artifact
-        uses: xSAVIKx/artifact-exists-action@v0
+        uses: xSAVIKx/artifact-exists-action@v0.2
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
 
       - uses: actions/checkout@v3
         if: ${{ steps.skip.outputs.no == 'true'
-             && steps.artifact.outputs.exists }}
+             && steps.artifact.outputs.exists == 'true' }}
 
       - uses: actions/download-artifact@v3
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
         if: ${{ steps.skip.outputs.no == 'true'
-             && steps.artifact.outputs.exists }}
+             && steps.artifact.outputs.exists == 'true' }}
       - name: Untar image
         run: docker load -i image.tar
         if: ${{ steps.skip.outputs.no == 'true'
-             && steps.artifact.outputs.exists }}
+             && steps.artifact.outputs.exists == 'true' }}
 
       - name: Login to ${{ matrix.registry }} container registry
         uses: docker/login-action@v2
@@ -154,7 +154,7 @@ jobs:
                          && secrets.QUAYIO_ROBOT_TOKEN)
                      || secrets.GITHUB_TOKEN }}
         if: ${{ steps.skip.outputs.no == 'true'
-             && steps.artifact.outputs.exists }}
+             && steps.artifact.outputs.exists == 'true' }}
 
       - name: Push image
         run: bash beta/push.sh
@@ -163,4 +163,4 @@ jobs:
           IMAGE: ${{ matrix.registry }}/${{ github.repository_owner }}/${{ env.NAME }}
           IMAGE_TAGS: ${{ matrix.tags }}
         if: ${{ steps.skip.outputs.no == 'true'
-             && steps.artifact.outputs.exists }}
+             && steps.artifact.outputs.exists == 'true' }}
