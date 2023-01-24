@@ -7,6 +7,7 @@ on:
 env:
   NAME: rust
   REGISTRY_AUTH_FILE: ./auth.json
+  SKOPEO_LATEST: true
 
 jobs:
   copy:
@@ -63,6 +64,23 @@ jobs:
                 || (matrix.registry == 'docker.io'
                     && secrets.DOCKERHUB_BOT_USER == ''))
              ) }}" >> $GITHUB_OUTPUT
+
+      - name: Install latest version of `skopeo`
+        run: |
+          sudo apt remove skopeo
+          sudo apt install go-md2man pkg-config \
+                           libassuan-dev libbtrfs-dev libdevmapper-dev \
+                           libgpgme-dev
+          git clone https://github.com/containers/skopeo \
+                    $GOPATH/src/github.com/containers/skopeo
+          cd $GOPATH/src/github.com/containers/skopeo/
+          make bin/skopeo
+          sudo make install
+        env:
+          DISABLE_DOCS: 1
+          GOPATH: /home/runner/go
+        if: ${{ steps.skip.outputs.no == 'true'
+             && env.SKOPEO_LATEST == 'true' }}
 
       - uses: actions/checkout@v3
         if: ${{ steps.skip.outputs.no == 'true' }}

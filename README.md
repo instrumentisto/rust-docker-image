@@ -101,7 +101,7 @@ This will add your current directory, as a volume, to the container, set the wor
 
 
 
-## Image variants
+## Image tags
 
 The `instrumentisto/rust` images come in many flavors, each designed for a specific use case.
 
