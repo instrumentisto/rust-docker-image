@@ -27,12 +27,14 @@ Mirrors [official `rust` Docker images][1].
 
 ### beta
 
-- [`beta`, `1.67.0-beta`, `1.67.0-beta.$n`, `beta-buster`, `1.67.0-beta-buster`, `1.67.0-beta.$n-buster`][201]
-- [`beta-slim`, `1.67.0-beta-slim`, `1.67.0-beta.$n-slim`, `beta-buster-slim`, `1.67.0-beta-buster-slim`, `1.67.0-beta.$n-buster-slim`][202]
-- [`beta-bullseye`, `1.67.0-beta-bullseye`, `1.67.0-beta.$n-bullseye`][203]
-- [`beta-bullseye-slim`, `1.67.0-beta-bullseye-slim`, `1.67.0-beta.$n-bullseye-slim`][204]
-- [`beta-alpine`, `1.67.0-beta-alpine`, `1.67.0-beta.$n-alpine`, `beta-alpine3.17`, `1.67.0-beta-alpine3.17`, `1.67.0-beta.$n-alpine3.17`][207]
-- [`beta-alpine3.16`, `1.67.0-beta-alpine3.16`, `1.67.0-beta.$n-alpine3.16`][208]
+- [`beta-buster`, `1.68.0-beta-buster`, `1.68.0-beta.$n-buster`][201]
+- [`beta-buster-slim`, `1.68.0-beta-buster-slim`, `1.68.0-beta.$n-buster-slim`][202]
+- [`beta`, `1.68.0-beta`, `1.68.0-beta.$n`, `beta-bullseye`, `1.68.0-beta-bullseye`, `1.68.0-beta.$n-bullseye`][203]
+- [`beta-slim`, `1.68.0-beta-slim`, `1.68.0-beta.$n-slim`, `beta-bullseye-slim`, `1.68.0-beta-bullseye-slim`, `1.68.0-beta.$n-bullseye-slim`][204]
+- [`beta-bookworm`, `1.68.0-beta-bookworm`, `1.68.0-beta.$n-bookworm`][205]
+- [`beta-bookworm-slim`, `1.68.0-beta-bookworm-slim`, `1.68.0-beta.$n-bookworm-slim`][206]
+- [`beta-alpine`, `1.68.0-beta-alpine`, `1.68.0-beta.$n-alpine`, `beta-alpine3.17`, `1.68.0-beta-alpine3.17`, `1.68.0-beta.$n-alpine3.17`][207]
+- [`beta-alpine3.16`, `1.68.0-beta-alpine3.16`, `1.68.0-beta.$n-alpine3.16`][208]
 
 
 ### nightly
@@ -179,6 +181,8 @@ If you have any problems with or questions about this image, please contact us t
 [202]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/buster-slim/Dockerfile
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye-slim/Dockerfile
+[205]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm/Dockerfile
+[206]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm-slim/Dockerfile
 [207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
 [208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.16/Dockerfile
 
