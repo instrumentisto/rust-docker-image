@@ -18,6 +18,8 @@ jobs:
         os:
           - alpine3.17
           - alpine3.16
+          - bookworm
+          - slim-bookworm
           - bullseye
           - slim-bullseye
           - buster
@@ -39,6 +41,18 @@ jobs:
               <minor-ver>-alpine3.16
               <major-ver>-alpine3.16
               alpine3.16
+          - os: bookworm
+            tags: |
+              <full-ver>-bookworm
+              <minor-ver>-bookworm
+              <major-ver>-bookworm
+              bookworm
+          - os: slim-bookworm
+            tags: |
+              <full-ver>-slim-bookworm
+              <minor-ver>-slim-bookworm
+              <major-ver>-slim-bookworm
+              slim-bookworm
           - os: bullseye
             tags: |
               <full-ver>-bullseye
