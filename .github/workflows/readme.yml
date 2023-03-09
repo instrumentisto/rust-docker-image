@@ -3,6 +3,7 @@ name: README CI
 on:
   push:
     branches: ["main"]
+    paths: ["README.md"]
 
 env:
   NAME: rust
