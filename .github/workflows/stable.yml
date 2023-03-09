@@ -100,9 +100,10 @@ jobs:
       - name: Install latest version of `skopeo`
         run: |
           sudo apt remove skopeo
-          sudo apt install go-md2man pkg-config \
-                           libassuan-dev libbtrfs-dev libdevmapper-dev \
-                           libgpgme-dev
+          sudo apt update
+          sudo apt install \
+                   go-md2man pkg-config \
+                   libassuan-dev libbtrfs-dev libdevmapper-dev libgpgme-dev
           git clone https://github.com/containers/skopeo \
                     $GOPATH/src/github.com/containers/skopeo
           cd $GOPATH/src/github.com/containers/skopeo/
