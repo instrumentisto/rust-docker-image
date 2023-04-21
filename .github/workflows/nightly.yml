@@ -16,43 +16,53 @@ jobs:
       matrix:
         registry: ["ghcr.io", "docker.io", "quay.io"]
         os:
-          - alpine3.15
-          - alpine3.14
-          - buster
-          - buster-slim
+          - alpine3.17
+          - alpine3.16
           - bullseye
           - bullseye-slim
+          - bookworm
+          - bookworm-slim
+          - buster
+          - buster-slim
         include:
-          - os: alpine3.15
+          - os: alpine3.17
             tags: |
-              nightly-alpine3.15-<ver>
+              nightly-alpine3.17-<ver>
               nightly-alpine-<ver>
-              nightly-alpine3.15
+              nightly-alpine3.17
               nightly-alpine
-          - os: alpine3.14
+          - os: alpine3.16
             tags: |
-              nightly-alpine3.14-<ver>
-              nightly-alpine3.14
-          - os: buster
-            tags: |
-              nightly-buster-<ver>
-              nightly-<ver>
-              nightly-buster
-              nightly
-          - os: buster-slim
-            tags: |
-              nightly-buster-slim-<ver>
-              nightly-slim-<ver>
-              nightly-buster-slim
-              nightly-slim
+              nightly-alpine3.16-<ver>
+              nightly-alpine3.16
           - os: bullseye
             tags: |
               nightly-bullseye-<ver>
+              nightly-<ver>
               nightly-bullseye
+              nightly
           - os: bullseye-slim
             tags: |
               nightly-bullseye-slim-<ver>
+              nightly-slim-<ver>
               nightly-bullseye-slim
+              nightly-slim
+          - os: bookworm
+            tags: |
+              nightly-bookworm-<ver>
+              nightly-bookworm
+          - os: bookworm-slim
+            tags: |
+              nightly-bookworm-slim-<ver>
+              nightly-bookworm-slim
+          - os: buster
+            tags: |
+              nightly-buster-<ver>
+              nightly-buster
+          - os: buster-slim
+            tags: |
+              nightly-buster-slim-<ver>
+              nightly-buster-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
