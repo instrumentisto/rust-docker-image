@@ -23,8 +23,8 @@ Mirrors [official `rust` Docker images][1].
 - [`1-slim-bullseye`, `1.69-slim-bullseye`, `1.69.0-slim-bullseye`, `slim-bullseye`, `1-slim`, `1.69-slim`, `1.69.0-slim`, `slim`][304]
 - [`1-bookworm`, `1.69-bookworm`, `1.69.0-bookworm`, `bookworm`][305]
 - [`1-slim-bookworm`, `1.69-slim-bookworm`, `1.69.0-slim-bookworm`, `slim-bookworm`][306]
-- [`1-alpine3.16`, `1.69-alpine3.16`, `1.69.0-alpine3.16`, `alpine3.16`][307]
-- [`1-alpine3.17`, `1.69-alpine3.17`, `1.69.0-alpine3.17`, `alpine3.17`, `1-alpine`, `1.69-alpine`, `1.69.0-alpine`, `alpine`][308]
+- [`1-alpine3.17`, `1.69-alpine3.17`, `1.69.0-alpine3.17`, `alpine3.17`][307]
+- [`1-alpine3.18`, `1.69-alpine3.18`, `1.69.0-alpine3.18`, `alpine3.18`, `1-alpine`, `1.69-alpine`, `1.69.0-alpine`, `alpine`][308]
 
 
 ### beta
@@ -35,8 +35,8 @@ Mirrors [official `rust` Docker images][1].
 - [`beta-slim`, `1.70.0-beta-slim`, `1.70.0-beta.$n-slim`, `beta-bullseye-slim`, `1.70.0-beta-bullseye-slim`, `1.70.0-beta.$n-bullseye-slim`][204]
 - [`beta-bookworm`, `1.70.0-beta-bookworm`, `1.70.0-beta.$n-bookworm`][205]
 - [`beta-bookworm-slim`, `1.70.0-beta-bookworm-slim`, `1.70.0-beta.$n-bookworm-slim`][206]
-- [`beta-alpine`, `1.70.0-beta-alpine`, `1.70.0-beta.$n-alpine`, `beta-alpine3.17`, `1.70.0-beta-alpine3.17`, `1.70.0-beta.$n-alpine3.17`][207]
-- [`beta-alpine3.16`, `1.70.0-beta-alpine3.16`, `1.70.0-beta.$n-alpine3.16`][208]
+- [`beta-alpine`, `1.70.0-beta-alpine`, `1.70.0-beta.$n-alpine`, `beta-alpine3.18`, `1.70.0-beta-alpine3.18`, `1.70.0-beta.$n-alpine3.18`][207]
+- [`beta-alpine3.17`, `1.70.0-beta-alpine3.17`, `1.70.0-beta.$n-alpine3.17`][208]
 
 
 ### nightly
@@ -50,7 +50,7 @@ Mirrors [official `ghcr.io/rust-lang/rust:nightly` Docker images][2], but preser
 - [`nightly-buster`, `nightly-buster-$date`][101]
 - [`nightly-buster-slim`, `nightly-buster-slim-$date`][102]
 - [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.17`, `nightly-alpine3.17-$date`][103]
-- [`nightly-alpine3.14`, `nightly-alpine3.16-$date`][103]
+- [`nightly-alpine3.16`, `nightly-alpine3.16-$date`][103]
 
 
 
@@ -187,8 +187,8 @@ If you have any problems with or questions about this image, please contact us t
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm/Dockerfile
 [206]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm-slim/Dockerfile
-[207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
-[208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.16/Dockerfile
+[207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.18/Dockerfile
+[208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
 
 [301]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/buster/Dockerfile
 [302]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/buster/slim/Dockerfile
@@ -196,5 +196,5 @@ If you have any problems with or questions about this image, please contact us t
 [304]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/bullseye/slim/Dockerfile
 [305]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/bookworm/Dockerfile
 [306]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/bookworm/slim/Dockerfile
-[307]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/alpine3.16/Dockerfile
-[308]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/alpine3.17/Dockerfile
+[307]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/alpine3.17/Dockerfile
+[308]: https://github.com/rust-lang/docker-rust/blob/master/1.69.0/alpine3.18/Dockerfile
