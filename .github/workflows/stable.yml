@@ -24,6 +24,8 @@ jobs:
           - slim-bullseye
           - buster
           - slim-buster
+          - trixie
+          - slim-trixie
         include:
           - os: alpine3.18
             tags: |
@@ -44,35 +46,35 @@ jobs:
           - os: bookworm
             tags: |
               <full-ver>-bookworm
+              <full-ver>
               <minor-ver>-bookworm
+              <minor-ver>
               <major-ver>-bookworm
+              <major-ver>
               bookworm
+              latest
           - os: slim-bookworm
             tags: |
               <full-ver>-slim-bookworm
+              <full-ver>-slim
               <minor-ver>-slim-bookworm
+              <minor-ver>-slim
               <major-ver>-slim-bookworm
+              <major-ver>-slim
               slim-bookworm
+              slim
           - os: bullseye
             tags: |
               <full-ver>-bullseye
-              <full-ver>
               <minor-ver>-bullseye
-              <minor-ver>
               <major-ver>-bullseye
-              <major-ver>
               bullseye
-              latest
           - os: slim-bullseye
             tags: |
               <full-ver>-slim-bullseye
-              <full-ver>-slim
               <minor-ver>-slim-bullseye
-              <minor-ver>-slim
               <major-ver>-slim-bullseye
-              <major-ver>-slim
               slim-bullseye
-              slim
           - os: buster
             tags: |
               <full-ver>-buster
@@ -85,6 +87,18 @@ jobs:
               <minor-ver>-slim-buster
               <major-ver>-slim-buster
               slim-buster
+          - os: trixie
+            tags: |
+              <full-ver>-trixie
+              <minor-ver>-trixie
+              <major-ver>-trixie
+              trixie
+          - os: slim-trixie
+            tags: |
+              <full-ver>-slim-trixie
+              <minor-ver>-slim-trixie
+              <major-ver>-slim-trixie
+              slim-trixie
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
