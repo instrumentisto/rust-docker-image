@@ -21,6 +21,8 @@ jobs:
           - bullseye-slim
           - buster
           - buster-slim
+          - trixie
+          - trixie-slim
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -71,6 +73,8 @@ jobs:
           - bullseye-slim
           - buster
           - buster-slim
+          - trixie
+          - trixie-slim
         include:
           - os: alpine3.18
             tags: |
@@ -88,29 +92,29 @@ jobs:
           - os: bookworm
             tags: |
               <full-ver>-bookworm
+              <full-ver>
               <num-ver>-beta-bookworm
+              <num-ver>-beta
               beta-bookworm
+              beta
           - os: bookworm-slim
             tags: |
               <full-ver>-bookworm-slim
+              <full-ver>-slim
               <num-ver>-beta-bookworm-slim
+              <num-ver>-beta-slim
               beta-bookworm-slim
+              beta-slim
           - os: bullseye
             tags: |
               <full-ver>-bullseye
-              <full-ver>
               <num-ver>-beta-bullseye
-              <num-ver>-beta
               beta-bullseye
-              beta
           - os: bullseye-slim
             tags: |
               <full-ver>-bullseye-slim
-              <full-ver>-slim
               <num-ver>-beta-bullseye-slim
-              <num-ver>-beta-slim
               beta-bullseye-slim
-              beta-slim
           - os: buster
             tags: |
               <full-ver>-buster
@@ -121,6 +125,16 @@ jobs:
               <full-ver>-buster-slim
               <num-ver>-beta-buster-slim
               beta-buster-slim
+          - os: trixie
+            tags: |
+              <full-ver>-trixie
+              <num-ver>-beta-trixie
+              beta-trixie
+          - os: trixie-slim
+            tags: |
+              <full-ver>-trixie-slim
+              <num-ver>-beta-trixie-slim
+              beta-trixie-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

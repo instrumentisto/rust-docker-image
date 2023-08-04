@@ -33,12 +33,14 @@ Mirrors [official `rust` Docker images][1].
 
 - [`beta-buster`, `1.72.0-beta-buster`, `1.72.0-beta.$n-buster`][201]
 - [`beta-buster-slim`, `1.72.0-beta-buster-slim`, `1.72.0-beta.$n-buster-slim`][202]
-- [`beta`, `1.72.0-beta`, `1.72.0-beta.$n`, `beta-bullseye`, `1.72.0-beta-bullseye`, `1.72.0-beta.$n-bullseye`][203]
-- [`beta-slim`, `1.72.0-beta-slim`, `1.72.0-beta.$n-slim`, `beta-bullseye-slim`, `1.72.0-beta-bullseye-slim`, `1.72.0-beta.$n-bullseye-slim`][204]
-- [`beta-bookworm`, `1.72.0-beta-bookworm`, `1.72.0-beta.$n-bookworm`][205]
-- [`beta-bookworm-slim`, `1.72.0-beta-bookworm-slim`, `1.72.0-beta.$n-bookworm-slim`][206]
-- [`beta-alpine`, `1.72.0-beta-alpine`, `1.72.0-beta.$n-alpine`, `beta-alpine3.18`, `1.72.0-beta-alpine3.18`, `1.72.0-beta.$n-alpine3.18`][207]
-- [`beta-alpine3.17`, `1.72.0-beta-alpine3.17`, `1.72.0-beta.$n-alpine3.17`][208]
+- [`beta-bullseye`, `1.72.0-beta-bullseye`, `1.72.0-beta.$n-bullseye`][203]
+- [`beta-bullseye-slim`, `1.72.0-beta-bullseye-slim`, `1.72.0-beta.$n-bullseye-slim`][204]
+- [`beta`, `1.72.0-beta`, `1.72.0-beta.$n`, `beta-bookworm`, `1.72.0-beta-bookworm`, `1.72.0-beta.$n-bookworm`][205]
+- [`beta-slim`, `1.72.0-beta-slim`, `1.72.0-beta.$n-slim`, `beta-bookworm-slim`, `1.72.0-beta-bookworm-slim`, `1.72.0-beta.$n-bookworm-slim`][206]
+- [`beta-trixie`, `1.72.0-beta-trixie`, `1.72.0-beta.$n-trixie`][207]
+- [`beta-trixie-slim`, `1.72.0-beta-trixie-slim`, `1.72.0-beta.$n-trixie-slim`][208]
+- [`beta-alpine`, `1.72.0-beta-alpine`, `1.72.0-beta.$n-alpine`, `beta-alpine3.18`, `1.72.0-beta-alpine3.18`, `1.72.0-beta.$n-alpine3.18`][209]
+- [`beta-alpine3.17`, `1.72.0-beta-alpine3.17`, `1.72.0-beta.$n-alpine3.17`][210]
 
 
 ### nightly
@@ -189,8 +191,10 @@ If you have any problems with or questions about this image, please contact us t
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm/Dockerfile
 [206]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm-slim/Dockerfile
-[207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.18/Dockerfile
-[208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
+[207]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/trixie/Dockerfile
+[208]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/trixie-slim/Dockerfile
+[209]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.18/Dockerfile
+[210]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
 
 [301]: https://github.com/rust-lang/docker-rust/blob/master/1.71.1/buster/Dockerfile
 [302]: https://github.com/rust-lang/docker-rust/blob/master/1.71.1/buster/slim/Dockerfile
