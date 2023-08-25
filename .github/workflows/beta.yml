@@ -21,8 +21,6 @@ jobs:
           - bullseye-slim
           - buster
           - buster-slim
-          - trixie
-          - trixie-slim
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -73,8 +71,6 @@ jobs:
           - bullseye-slim
           - buster
           - buster-slim
-          - trixie
-          - trixie-slim
         include:
           - os: alpine3.18
             tags: |
@@ -125,16 +121,6 @@ jobs:
               <full-ver>-buster-slim
               <num-ver>-beta-buster-slim
               beta-buster-slim
-          - os: trixie
-            tags: |
-              <full-ver>-trixie
-              <num-ver>-beta-trixie
-              beta-trixie
-          - os: trixie-slim
-            tags: |
-              <full-ver>-trixie-slim
-              <num-ver>-beta-trixie-slim
-              beta-trixie-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
