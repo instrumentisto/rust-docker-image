@@ -23,7 +23,7 @@ jobs:
           - buster-slim
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Check upstream version changed
         id: upstream
@@ -139,7 +139,7 @@ jobs:
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: ${{ steps.skip.outputs.no == 'true'
              && steps.artifact.outputs.exists == 'true' }}
 
