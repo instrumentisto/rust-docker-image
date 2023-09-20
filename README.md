@@ -17,14 +17,14 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-buster`, `1.72-buster`, `1.72.0-buster`, `buster`][301]
-- [`1-slim-buster`, `1.72-slim-buster`, `1.72.0-slim-buster`, `slim-buster`][302]
-- [`1-bullseye`, `1.72-bullseye`, `1.72.0-bullseye`, `bullseye`][303]
-- [`1-slim-bullseye`, `1.72-slim-bullseye`, `1.72.0-slim-bullseye`, `slim-bullseye`][304]
-- [`1-bookworm`, `1.72-bookworm`, `1.72.0-bookworm`, `bookworm`, `1`, `1.72`, `1.72.0`, `latest`][305]
-- [`1-slim-bookworm`, `1.72-slim-bookworm`, `1.72.0-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.72-slim`, `1.72.0-slim`, `slim`][306]
-- [`1-alpine3.17`, `1.72-alpine3.17`, `1.72.0-alpine3.17`, `alpine3.17`][309]
-- [`1-alpine3.18`, `1.72-alpine3.18`, `1.72.0-alpine3.18`, `alpine3.18`, `1-alpine`, `1.72-alpine`, `1.72.0-alpine`, `alpine`][310]
+- [`1-buster`, `1.72-buster`, `1.72.1-buster`, `buster`][301]
+- [`1-slim-buster`, `1.72-slim-buster`, `1.72.1-slim-buster`, `slim-buster`][302]
+- [`1-bullseye`, `1.72-bullseye`, `1.72.1-bullseye`, `bullseye`][303]
+- [`1-slim-bullseye`, `1.72-slim-bullseye`, `1.72.1-slim-bullseye`, `slim-bullseye`][304]
+- [`1-bookworm`, `1.72-bookworm`, `1.72.1-bookworm`, `bookworm`, `1`, `1.72`, `1.72.1`, `latest`][305]
+- [`1-slim-bookworm`, `1.72-slim-bookworm`, `1.72.1-slim-bookworm`, `slim-bookworm`, `1-slim`, `1.72-slim`, `1.72.1-slim`, `slim`][306]
+- [`1-alpine3.17`, `1.72-alpine3.17`, `1.72.1-alpine3.17`, `alpine3.17`][309]
+- [`1-alpine3.18`, `1.72-alpine3.18`, `1.72.1-alpine3.18`, `alpine3.18`, `1-alpine`, `1.72-alpine`, `1.72.1-alpine`, `alpine`][310]
 
 
 ### beta
@@ -190,11 +190,11 @@ If you have any problems with or questions about this image, please contact us t
 [209]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.18/Dockerfile
 [210]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.17/Dockerfile
 
-[301]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/buster/Dockerfile
-[302]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/buster/slim/Dockerfile
-[303]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/bullseye/Dockerfile
-[304]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/bullseye/slim/Dockerfile
-[305]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/bookworm/Dockerfile
-[306]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/bookworm/slim/Dockerfile
-[309]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/alpine3.17/Dockerfile
-[310]: https://github.com/rust-lang/docker-rust/blob/master/1.72.0/alpine3.18/Dockerfile
+[301]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/buster/Dockerfile
+[302]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/buster/slim/Dockerfile
+[303]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/bullseye/Dockerfile
+[304]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/bullseye/slim/Dockerfile
+[305]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/bookworm/Dockerfile
+[306]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/bookworm/slim/Dockerfile
+[309]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/alpine3.17/Dockerfile
+[310]: https://github.com/rust-lang/docker-rust/blob/master/1.72.1/alpine3.18/Dockerfile
