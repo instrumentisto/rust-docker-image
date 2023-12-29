@@ -13,8 +13,8 @@ jobs:
       fail-fast: false
       matrix:
         os:
+          - alpine3.19
           - alpine3.18
-          - alpine3.17
           - bookworm
           - bookworm-slim
           - bullseye
@@ -63,8 +63,8 @@ jobs:
       matrix:
         registry: ["ghcr.io", "docker.io", "quay.io"]
         os:
+          - alpine3.19
           - alpine3.18
-          - alpine3.17
           - bookworm
           - bookworm-slim
           - bullseye
@@ -72,19 +72,19 @@ jobs:
           - buster
           - buster-slim
         include:
+          - os: alpine3.19
+            tags: |
+              <full-ver>-alpine3.19
+              <full-ver>-alpine
+              <num-ver>-beta-alpine3.19
+              <num-ver>-beta-alpine
+              beta-alpine3.19
+              beta-alpine
           - os: alpine3.18
             tags: |
               <full-ver>-alpine3.18
-              <full-ver>-alpine
               <num-ver>-beta-alpine3.18
-              <num-ver>-beta-alpine
               beta-alpine3.18
-              beta-alpine
-          - os: alpine3.17
-            tags: |
-              <full-ver>-alpine3.17
-              <num-ver>-beta-alpine3.17
-              beta-alpine3.17
           - os: bookworm
             tags: |
               <full-ver>-bookworm
