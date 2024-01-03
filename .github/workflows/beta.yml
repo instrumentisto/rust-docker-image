@@ -135,7 +135,7 @@ jobs:
 
       - name: Check new image was built
         id: artifact
-        uses: xSAVIKx/artifact-exists-action@v0.2
+        uses: xSAVIKx/artifact-exists-action@v0.6
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
 
