@@ -49,7 +49,9 @@ jobs:
         run: docker save -o image.tar
                     ${{ github.repository_owner }}/${{ env.NAME }}:build-${{ matrix.os }}
         if: ${{ contains(steps.upstream.outputs.result, 'CHANGED') }}
-      - uses: actions/upload-artifact@v4
+      # TODO: Migrate to v4 once `xSAVIKx/artifact-exists-action` supports it:
+      #       https://github.com/xSAVIKx/artifact-exists-action/tree/v0.6#artifact-exists-action
+      - uses: actions/upload-artifact@v3
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
           path: image.tar
