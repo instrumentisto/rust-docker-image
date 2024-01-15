@@ -7,7 +7,7 @@ on:
 env:
   NAME: rust
   REGISTRY_AUTH_FILE: ./auth.json
-  SKOPEO_LATEST: false
+  SKOPEO_LATEST: true
 
 jobs:
   copy:
