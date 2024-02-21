@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ -z "$IMAGE" ]; then
   echo "error: No IMAGE env var provided"
   exit 1
@@ -15,7 +14,7 @@ set -e
 
 
 upstream=$(skopeo inspect \
-                  --raw docker://ghcr.io/rust-lang/rust:nightly-$IMAGE_OS \
+                  --raw docker://docker.io/rustlang/rust:nightly-$IMAGE_OS \
            | jq -c '.')
 echo "--> Upstream image manifests: $upstream"
 

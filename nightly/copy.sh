@@ -23,15 +23,15 @@ fi
 set -e
 
 runCmd \
-  podman pull ghcr.io/rust-lang/rust:nightly-$IMAGE_OS
+  podman pull docker.io/rustlang/rust:nightly-$IMAGE_OS
 
-ver=$(podman run --rm ghcr.io/rust-lang/rust:nightly-$IMAGE_OS rustc -V \
+ver=$(podman run --rm docker.io/rustlang/rust:nightly-$IMAGE_OS rustc -V \
       | cut -d ' ' -f4 \
       | tr -d "\n )")
 tags=$(printf "$IMAGE_TAGS" | sed "s/<ver>/$ver/g" | tr ',' "\n")
 
 for tag in $tags; do
   runCmd \
-    skopeo copy --all "docker://ghcr.io/rust-lang/rust:nightly-$IMAGE_OS" \
+    skopeo copy --all "docker://docker.io/rustlang/rust:nightly-$IMAGE_OS" \
                       "docker://$IMAGE:$tag"
 done
