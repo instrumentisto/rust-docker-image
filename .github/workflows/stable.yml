@@ -25,22 +25,22 @@ jobs:
           - buster
           - slim-buster
         include:
+          - os: alpine3.20
+            tags: |
+              <full-ver>-alpine3.20
+              <full-ver>-alpine
+              <minor-ver>-alpine3.20
+              <minor-ver>-alpine
+              <major-ver>-alpine3.20
+              <major-ver>-alpine
+              alpine3.20
+              alpine
           - os: alpine3.19
             tags: |
               <full-ver>-alpine3.19
-              <full-ver>-alpine
               <minor-ver>-alpine3.19
-              <minor-ver>-alpine
               <major-ver>-alpine3.19
-              <major-ver>-alpine
               alpine3.19
-              alpine
-          - os: alpine3.18
-            tags: |
-              <full-ver>-alpine3.18
-              <minor-ver>-alpine3.18
-              <major-ver>-alpine3.18
-              alpine3.18
           - os: bookworm
             tags: |
               <full-ver>-bookworm

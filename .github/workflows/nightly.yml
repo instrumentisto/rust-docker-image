@@ -16,8 +16,8 @@ jobs:
       matrix:
         registry: ["ghcr.io", "docker.io", "quay.io"]
         os:
+          - alpine3.20
           - alpine3.19
-          - alpine3.18
           - bookworm
           - bookworm-slim
           - bullseye
@@ -25,16 +25,16 @@ jobs:
           - buster
           - buster-slim
         include:
+          - os: alpine3.20
+            tags: |
+              nightly-alpine3.20-<ver>
+              nightly-alpine-<ver>
+              nightly-alpine3.20
+              nightly-alpine
           - os: alpine3.19
             tags: |
               nightly-alpine3.19-<ver>
-              nightly-alpine-<ver>
               nightly-alpine3.19
-              nightly-alpine
-          - os: alpine3.18
-            tags: |
-              nightly-alpine3.18-<ver>
-              nightly-alpine3.18
           - os: bookworm
             tags: |
               nightly-bookworm-<ver>
