@@ -29,14 +29,14 @@ Mirrors [official `rust` Docker images][1].
 
 ### beta
 
-- [`beta-buster`, `1.79.0-beta-buster`, `1.79.0-beta.$n-buster`][201]
-- [`beta-buster-slim`, `1.79.0-beta-buster-slim`, `1.79.0-beta.$n-buster-slim`][202]
-- [`beta-bullseye`, `1.79.0-beta-bullseye`, `1.79.0-beta.$n-bullseye`][203]
-- [`beta-bullseye-slim`, `1.79.0-beta-bullseye-slim`, `1.79.0-beta.$n-bullseye-slim`][204]
-- [`beta`, `1.79.0-beta`, `1.79.0-beta.$n`, `beta-bookworm`, `1.79.0-beta-bookworm`, `1.79.0-beta.$n-bookworm`][205]
-- [`beta-slim`, `1.79.0-beta-slim`, `1.79.0-beta.$n-slim`, `beta-bookworm-slim`, `1.79.0-beta-bookworm-slim`, `1.79.0-beta.$n-bookworm-slim`][206]
-- [`beta-alpine`, `1.79.0-beta-alpine`, `1.79.0-beta.$n-alpine`, `beta-alpine3.20`, `1.79.0-beta-alpine3.20`, `1.79.0-beta.$n-alpine3.20`][209]
-- [`beta-alpine3.19`, `1.79.0-beta-alpine3.19`, `1.79.0-beta.$n-alpine3.19`][210]
+- [`beta-buster`, `1.80.0-beta-buster`, `1.80.0-beta.$n-buster`][201]
+- [`beta-buster-slim`, `1.80.0-beta-buster-slim`, `1.80.0-beta.$n-buster-slim`][202]
+- [`beta-bullseye`, `1.80.0-beta-bullseye`, `1.80.0-beta.$n-bullseye`][203]
+- [`beta-bullseye-slim`, `1.80.0-beta-bullseye-slim`, `1.80.0-beta.$n-bullseye-slim`][204]
+- [`beta`, `1.80.0-beta`, `1.80.0-beta.$n`, `beta-bookworm`, `1.80.0-beta-bookworm`, `1.80.0-beta.$n-bookworm`][205]
+- [`beta-slim`, `1.80.0-beta-slim`, `1.80.0-beta.$n-slim`, `beta-bookworm-slim`, `1.80.0-beta-bookworm-slim`, `1.80.0-beta.$n-bookworm-slim`][206]
+- [`beta-alpine`, `1.80.0-beta-alpine`, `1.80.0-beta.$n-alpine`, `beta-alpine3.20`, `1.80.0-beta-alpine3.20`, `1.80.0-beta.$n-alpine3.20`][209]
+- [`beta-alpine3.19`, `1.80.0-beta-alpine3.19`, `1.80.0-beta.$n-alpine3.19`][210]
 
 
 ### nightly
