@@ -17,8 +17,6 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-buster`, `1.79-buster`, `1.79.0-buster`, `buster`][301]
-- [`1-slim-buster`, `1.79-slim-buster`, `1.79.0-slim-buster`, `slim-buster`][302]
 - [`1-bullseye`, `1.79-bullseye`, `1.79.0-bullseye`, `bullseye`][303]
 - [`1-slim-bullseye`, `1.79-slim-bullseye`, `1.79.0-slim-bullseye`, `slim-bullseye`][304]
 - [`1-bookworm`, `1.79-bookworm`, `1.79.0-bookworm`, `bookworm`, `1`, `1.79`, `1.79.0`, `latest`][305]
@@ -29,8 +27,6 @@ Mirrors [official `rust` Docker images][1].
 
 ### beta
 
-- [`beta-buster`, `1.80.0-beta-buster`, `1.80.0-beta.$n-buster`][201]
-- [`beta-buster-slim`, `1.80.0-beta-buster-slim`, `1.80.0-beta.$n-buster-slim`][202]
 - [`beta-bullseye`, `1.80.0-beta-bullseye`, `1.80.0-beta.$n-bullseye`][203]
 - [`beta-bullseye-slim`, `1.80.0-beta-bullseye-slim`, `1.80.0-beta.$n-bullseye-slim`][204]
 - [`beta`, `1.80.0-beta`, `1.80.0-beta.$n`, `beta-bookworm`, `1.80.0-beta-bookworm`, `1.80.0-beta.$n-bookworm`][205]
@@ -47,8 +43,6 @@ Mirrors [official `rust-lang/rust:nightly` Docker images][2], but preserves vers
 - [`nightly-slim`, `nightly-slim-$date`, `nightly-bookworm-slim`, `nightly-bookworm-slim-$date`][102]
 - [`nightly-bullseye`, `nightly-bullseye-$date`][103]
 - [`nightly-bullseye-slim`, `nightly-bullseye-slim-$date`][104]
-- [`nightly-buster`, `nightly-buster-$date`][105]
-- [`nightly-buster-slim`, `nightly-buster-slim-$date`][106]
 - [`nightly-alpine`, `nightly-alpine-$date`, `nightly-alpine3.20`, `nightly-alpine3.20-$date`][107]
 - [`nightly-alpine3.19`, `nightly-alpine3.19-$date`][108]
 
@@ -116,7 +110,7 @@ The `instrumentisto/rust` images come in many flavors, each designed for a speci
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like `buster` or `bullseye` in them. These are the suite code names for [releases of Debian][11] and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like `bookworm` or `bullseye` in them. These are the suite code names for [releases of Debian][11] and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`][12]. `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
@@ -181,13 +175,9 @@ If you have any problems with or questions about this image, please contact us t
 [102]: https://github.com/rust-lang/docker-rust/blob/master/nightly/bookworm/slim/Dockerfile
 [103]: https://github.com/rust-lang/docker-rust/blob/master/nightly/bullseye/Dockerfile
 [104]: https://github.com/rust-lang/docker-rust/blob/master/nightly/bullseye/slim/Dockerfile
-[105]: https://github.com/rust-lang/docker-rust/blob/master/nightly/buster/Dockerfile
-[106]: https://github.com/rust-lang/docker-rust/blob/master/nightly/buster/slim/Dockerfile
 [107]: https://github.com/rust-lang/docker-rust/blob/master/nightly/alpine3.20/Dockerfile
 [108]: https://github.com/rust-lang/docker-rust/blob/master/nightly/alpine3.19/Dockerfile
 
-[201]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/buster/Dockerfile
-[202]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/buster-slim/Dockerfile
 [203]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye/Dockerfile
 [204]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bullseye-slim/Dockerfile
 [205]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/bookworm/Dockerfile
@@ -195,8 +185,6 @@ If you have any problems with or questions about this image, please contact us t
 [209]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.20/Dockerfile
 [210]: https://github.com/instrumentisto/rust-docker-image/blob/main/beta/alpine3.19/Dockerfile
 
-[301]: https://github.com/rust-lang/docker-rust/blob/master/1.79.0/buster/Dockerfile
-[302]: https://github.com/rust-lang/docker-rust/blob/master/1.79.0/buster/slim/Dockerfile
 [303]: https://github.com/rust-lang/docker-rust/blob/master/1.79.0/bullseye/Dockerfile
 [304]: https://github.com/rust-lang/docker-rust/blob/master/1.79.0/bullseye/slim/Dockerfile
 [305]: https://github.com/rust-lang/docker-rust/blob/master/1.79.0/bookworm/Dockerfile

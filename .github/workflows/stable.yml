@@ -22,8 +22,6 @@ jobs:
           - slim-bookworm
           - bullseye
           - slim-bullseye
-          - buster
-          - slim-buster
         include:
           - os: alpine3.20
             tags: |
@@ -73,18 +71,6 @@ jobs:
               <minor-ver>-slim-bullseye
               <major-ver>-slim-bullseye
               slim-bullseye
-          - os: buster
-            tags: |
-              <full-ver>-buster
-              <minor-ver>-buster
-              <major-ver>-buster
-              buster
-          - os: slim-buster
-            tags: |
-              <full-ver>-slim-buster
-              <minor-ver>-slim-buster
-              <major-ver>-slim-buster
-              slim-buster
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

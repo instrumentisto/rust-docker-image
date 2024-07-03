@@ -19,8 +19,6 @@ jobs:
           - bookworm-slim
           - bullseye
           - bullseye-slim
-          - buster
-          - buster-slim
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -71,8 +69,6 @@ jobs:
           - bookworm-slim
           - bullseye
           - bullseye-slim
-          - buster
-          - buster-slim
         include:
           - os: alpine3.20
             tags: |
@@ -113,16 +109,6 @@ jobs:
               <full-ver>-bullseye-slim
               <num-ver>-beta-bullseye-slim
               beta-bullseye-slim
-          - os: buster
-            tags: |
-              <full-ver>-buster
-              <num-ver>-beta-buster
-              beta-buster
-          - os: buster-slim
-            tags: |
-              <full-ver>-buster-slim
-              <num-ver>-beta-buster-slim
-              beta-buster-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

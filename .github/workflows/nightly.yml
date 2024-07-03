@@ -22,8 +22,6 @@ jobs:
           - bookworm-slim
           - bullseye
           - bullseye-slim
-          - buster
-          - buster-slim
         include:
           - os: alpine3.20
             tags: |
@@ -55,14 +53,6 @@ jobs:
             tags: |
               nightly-bullseye-slim-<ver>
               nightly-bullseye-slim
-          - os: buster
-            tags: |
-              nightly-buster-<ver>
-              nightly-buster
-          - os: buster-slim
-            tags: |
-              nightly-buster-slim-<ver>
-              nightly-buster-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
