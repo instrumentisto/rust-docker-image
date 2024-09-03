@@ -133,7 +133,7 @@ jobs:
 
       # TODO: Migrate to v4 once `xSAVIKx/artifact-exists-action` supports it:
       #       https://github.com/xSAVIKx/artifact-exists-action/tree/v0.6#artifact-exists-action
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
         if: ${{ steps.skip.outputs.no == 'true'
