@@ -10,8 +10,8 @@ if [ -z "$IMAGE" ]; then
   echo "error: No IMAGE env var provided"
   exit 1
 fi
-if [ -z "$IMAGE_OS" ]; then
-  echo "error: No IMAGE_OS env var provided"
+if [ -z "$SOURCE_TAG" ]; then
+  echo "error: No SOURCE_TAG env var provided"
   exit 1
 fi
 if [ -z "$IMAGE_TAGS" ]; then
@@ -23,9 +23,9 @@ fi
 set -e
 
 runCmd \
-  podman pull docker.io/rust:$IMAGE_OS
+  podman pull docker.io/rust:$SOURCE_TAG
 
-fullVer=$(podman run --rm docker.io/rust:$IMAGE_OS rustc -V \
+fullVer=$(podman run --rm docker.io/rust:$SOURCE_TAG rustc -V \
           | cut -d ' ' -f2 \
           | tr -d "\n )")
 majorVer=$(printf "$fullVer" | cut -d '.' -f1)
@@ -38,6 +38,6 @@ tags=$(printf "$IMAGE_TAGS" | sed "s/<full-ver>/$fullVer/g" \
 
 for tag in $tags; do
   runCmd \
-    skopeo copy --all "docker://docker.io/rust:$IMAGE_OS" \
+    skopeo copy --all "docker://docker.io/rust:$SOURCE_TAG" \
                       "docker://$IMAGE:$tag"
 done

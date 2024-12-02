@@ -8,6 +8,7 @@ env:
   NAME: rust
   REGISTRY_AUTH_FILE: ./auth.json
   SKOPEO_LATEST: true
+  VERSION: 1.83.0
 
 jobs:
   copy:
@@ -112,7 +113,7 @@ jobs:
           echo 'result<<EOF'$'\n'"$result"$'\n'EOF >> $GITHUB_OUTPUT
         env:
           IMAGE: ${{ matrix.registry }}/${{ github.repository_owner }}/${{ env.NAME }}
-          IMAGE_OS: ${{ matrix.os }}
+          SOURCE_TAG: ${{ env.VERSION }}-${{ matrix.os }}
         if: ${{ steps.skip.outputs.no == 'true' }}
 
       - name: Login to ${{ matrix.registry }} container registry
@@ -134,7 +135,7 @@ jobs:
         run: bash stable/copy.sh
         env:
           IMAGE: ${{ matrix.registry }}/${{ github.repository_owner }}/${{ env.NAME }}
-          IMAGE_OS: ${{ matrix.os }}
+          SOURCE_TAG: ${{ env.VERSION }}-${{ matrix.os }}
           IMAGE_TAGS: ${{ matrix.tags }}
         if: ${{ steps.skip.outputs.no == 'true'
              && contains(steps.upstream.outputs.result, 'CHANGED') }}
