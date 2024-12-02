@@ -2,7 +2,7 @@ name: Beta CI
 
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "33 */2 * * *"
 
 env:
   NAME: rust
