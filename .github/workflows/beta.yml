@@ -47,9 +47,7 @@ jobs:
         run: docker save -o image.tar
                     ${{ github.repository_owner }}/${{ env.NAME }}:build-${{ matrix.os }}
         if: ${{ contains(steps.upstream.outputs.result, 'CHANGED') }}
-      # TODO: Migrate to v4 once `xSAVIKx/artifact-exists-action` supports it:
-      #       https://github.com/xSAVIKx/artifact-exists-action/tree/v0.6#artifact-exists-action
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
           path: image.tar
@@ -123,7 +121,7 @@ jobs:
 
       - name: Check new image was built
         id: artifact
-        uses: xSAVIKx/artifact-exists-action@v0.6
+        uses: LIT-Protocol/artifact-exists-action@v0
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
 
@@ -131,9 +129,7 @@ jobs:
         if: ${{ steps.skip.outputs.no == 'true'
              && steps.artifact.outputs.exists == 'true' }}
 
-      # TODO: Migrate to v4 once `xSAVIKx/artifact-exists-action` supports it:
-      #       https://github.com/xSAVIKx/artifact-exists-action/tree/v0.6#artifact-exists-action
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
         if: ${{ steps.skip.outputs.no == 'true'
