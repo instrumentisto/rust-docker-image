@@ -16,6 +16,7 @@ jobs:
       matrix:
         registry: ["ghcr.io", "docker.io", "quay.io"]
         os:
+          - alpine3.22
           - alpine3.21
           - alpine3.20
           - bookworm
@@ -23,12 +24,16 @@ jobs:
           - bullseye
           - bullseye-slim
         include:
+          - os: alpine3.22
+            tags: |
+              nightly-alpine3.22-<ver>
+              nightly-alpine-<ver>
+              nightly-alpine3.22
+              nightly-alpine
           - os: alpine3.21
             tags: |
               nightly-alpine3.21-<ver>
-              nightly-alpine-<ver>
               nightly-alpine3.21
-              nightly-alpine
           - os: alpine3.20
             tags: |
               nightly-alpine3.20-<ver>
