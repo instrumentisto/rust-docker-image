@@ -28,13 +28,13 @@ Mirrors [official `rust` Docker images][1].
 
 ### beta
 
-- [`beta-bullseye`, `1.88.0-beta-bullseye`, `1.88.0-beta.$n-bullseye`][203]
-- [`beta-bullseye-slim`, `1.88.0-beta-bullseye-slim`, `1.88.0-beta.$n-bullseye-slim`][204]
-- [`beta`, `1.88.0-beta`, `1.88.0-beta.$n`, `beta-bookworm`, `1.88.0-beta-bookworm`, `1.88.0-beta.$n-bookworm`][205]
-- [`beta-slim`, `1.88.0-beta-slim`, `1.88.0-beta.$n-slim`, `beta-bookworm-slim`, `1.88.0-beta-bookworm-slim`, `1.88.0-beta.$n-bookworm-slim`][206]
-- [`beta-alpine`, `1.88.0-beta-alpine`, `1.88.0-beta.$n-alpine`, `beta-alpine3.22`, `1.88.0-beta-alpine3.22`, `1.88.0-beta.$n-alpine3.22`][208]
-- [`beta-alpine3.21`, `1.88.0-beta-alpine3.21`, `1.88.0-beta.$n-alpine3.21`][209]
-- [`beta-alpine3.20`, `1.88.0-beta-alpine3.20`, `1.88.0-beta.$n-alpine3.20`][210]
+- [`beta-bullseye`, `1.89.0-beta-bullseye`, `1.89.0-beta.$n-bullseye`][203]
+- [`beta-bullseye-slim`, `1.89.0-beta-bullseye-slim`, `1.89.0-beta.$n-bullseye-slim`][204]
+- [`beta`, `1.89.0-beta`, `1.89.0-beta.$n`, `beta-bookworm`, `1.89.0-beta-bookworm`, `1.89.0-beta.$n-bookworm`][205]
+- [`beta-slim`, `1.89.0-beta-slim`, `1.89.0-beta.$n-slim`, `beta-bookworm-slim`, `1.89.0-beta-bookworm-slim`, `1.89.0-beta.$n-bookworm-slim`][206]
+- [`beta-alpine`, `1.89.0-beta-alpine`, `1.89.0-beta.$n-alpine`, `beta-alpine3.22`, `1.89.0-beta-alpine3.22`, `1.89.0-beta.$n-alpine3.22`][208]
+- [`beta-alpine3.21`, `1.89.0-beta-alpine3.21`, `1.89.0-beta.$n-alpine3.21`][209]
+- [`beta-alpine3.20`, `1.89.0-beta-alpine3.20`, `1.89.0-beta.$n-alpine3.20`][210]
 
 
 ### nightly
