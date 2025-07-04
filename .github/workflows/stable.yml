@@ -24,6 +24,8 @@ jobs:
           - slim-bookworm
           - bullseye
           - slim-bullseye
+          - trixie
+          - slim-trixie
         include:
           - os: alpine3.22
             tags: |
@@ -79,6 +81,18 @@ jobs:
               <minor-ver>-slim-bullseye
               <major-ver>-slim-bullseye
               slim-bullseye
+          - os: trixie
+            tags: |
+              <full-ver>-trixie
+              <minor-ver>-trixie
+              <major-ver>-trixie
+              trixie
+          - os: slim-trixie
+            tags: |
+              <full-ver>-slim-trixie
+              <minor-ver>-slim-trixie
+              <major-ver>-slim-trixie
+              slim-trixie
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

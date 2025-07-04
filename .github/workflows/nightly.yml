@@ -23,6 +23,8 @@ jobs:
           - bookworm-slim
           - bullseye
           - bullseye-slim
+          - trixie
+          - trixie-slim
         include:
           - os: alpine3.22
             tags: |
@@ -58,6 +60,14 @@ jobs:
             tags: |
               nightly-bullseye-slim-<ver>
               nightly-bullseye-slim
+          - os: trixie
+            tags: |
+              nightly-trixie-<ver>
+              nightly-trixie
+          - os: trixie-slim
+            tags: |
+              nightly-trixie-slim-<ver>
+              nightly-trixie-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
