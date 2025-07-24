@@ -77,7 +77,7 @@ jobs:
                && ((matrix.registry == 'quay.io'
                     && secrets.QUAYIO_ROBOT_USER == '')
                 || (matrix.registry == 'docker.io'
-                    && secrets.DOCKERHUB_BOT_USER == ''))
+                    && secrets.DOCKERHUB_BOT2_USER == ''))
              ) }}" >> $GITHUB_OUTPUT
 
       - name: Install latest version of `skopeo`
@@ -114,12 +114,12 @@ jobs:
 
       - name: Login to ${{ matrix.registry }} container registry
         run: skopeo login --username='${{ (matrix.registry == 'docker.io'
-                                           && secrets.DOCKERHUB_BOT_USER)
+                                           && secrets.DOCKERHUB_BOT2_USER)
                                        || (matrix.registry == 'quay.io'
                                            && secrets.QUAYIO_ROBOT_USER)
                                        || github.repository_owner }}'
                           --password='${{ (matrix.registry == 'docker.io'
-                                           && secrets.DOCKERHUB_BOT_PASS)
+                                           && secrets.DOCKERHUB_BOT2_PASS)
                                        || (matrix.registry == 'quay.io'
                                            && secrets.QUAYIO_ROBOT_TOKEN)
                                        || secrets.GITHUB_TOKEN }}'
