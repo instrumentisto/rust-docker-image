@@ -3,6 +3,7 @@ name: Nightly CI
 on:
   schedule:
     - cron: "42 */2 * * *"
+  workflow_dispatch: {}
 
 env:
   NAME: rust

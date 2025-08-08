@@ -3,6 +3,7 @@ name: Beta CI
 on:
   schedule:
     - cron: "33 */2 * * *"
+  workflow_dispatch: {}
 
 env:
   NAME: rust
