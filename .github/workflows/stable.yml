@@ -124,7 +124,7 @@ jobs:
         if: ${{ steps.skip.outputs.no == 'true'
              && env.SKOPEO_LATEST == 'true' }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ steps.skip.outputs.no == 'true' }}
 
       - name: Check upstream manifests changed
