@@ -96,19 +96,13 @@ jobs:
           - os: bookworm
             tags: |
               <full-ver>-bookworm
-              <full-ver>
               <num-ver>-beta-bookworm
-              <num-ver>-beta
               beta-bookworm
-              beta
           - os: bookworm-slim
             tags: |
               <full-ver>-bookworm-slim
-              <full-ver>-slim
               <num-ver>-beta-bookworm-slim
-              <num-ver>-beta-slim
               beta-bookworm-slim
-              beta-slim
           - os: bullseye
             tags: |
               <full-ver>-bullseye
@@ -122,13 +116,19 @@ jobs:
           - os: trixie
             tags: |
               <full-ver>-trixie
+              <full-ver>
               <num-ver>-beta-trixie
+              <num-ver>-beta
               beta-trixie
+              beta
           - os: trixie-slim
             tags: |
               <full-ver>-trixie-slim
+              <full-ver>-slim
               <num-ver>-beta-trixie-slim
+              <num-ver>-beta-slim
               beta-trixie-slim
+              beta-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

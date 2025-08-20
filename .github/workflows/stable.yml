@@ -53,23 +53,15 @@ jobs:
           - os: bookworm
             tags: |
               <full-ver>-bookworm
-              <full-ver>
               <minor-ver>-bookworm
-              <minor-ver>
               <major-ver>-bookworm
-              <major-ver>
               bookworm
-              latest
           - os: slim-bookworm
             tags: |
               <full-ver>-slim-bookworm
-              <full-ver>-slim
               <minor-ver>-slim-bookworm
-              <minor-ver>-slim
               <major-ver>-slim-bookworm
-              <major-ver>-slim
               slim-bookworm
-              slim
           - os: bullseye
             tags: |
               <full-ver>-bullseye
@@ -85,15 +77,23 @@ jobs:
           - os: trixie
             tags: |
               <full-ver>-trixie
+              <full-ver>
               <minor-ver>-trixie
+              <minor-ver>
               <major-ver>-trixie
+              <major-ver>
               trixie
+              latest
           - os: slim-trixie
             tags: |
               <full-ver>-slim-trixie
+              <full-ver>-slim
               <minor-ver>-slim-trixie
+              <minor-ver>-slim
               <major-ver>-slim-trixie
+              <major-ver>-slim
               slim-trixie
+              slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.

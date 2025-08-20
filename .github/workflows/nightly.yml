@@ -44,15 +44,11 @@ jobs:
           - os: bookworm
             tags: |
               nightly-bookworm-<ver>
-              nightly-<ver>
               nightly-bookworm
-              nightly
           - os: bookworm-slim
             tags: |
               nightly-bookworm-slim-<ver>
-              nightly-slim-<ver>
               nightly-bookworm-slim
-              nightly-slim
           - os: bullseye
             tags: |
               nightly-bullseye-<ver>
@@ -64,11 +60,15 @@ jobs:
           - os: trixie
             tags: |
               nightly-trixie-<ver>
+              nightly-<ver>
               nightly-trixie
+              nightly
           - os: trixie-slim
             tags: |
               nightly-trixie-slim-<ver>
+              nightly-slim-<ver>
               nightly-trixie-slim
+              nightly-slim
     runs-on: ubuntu-latest
     steps:
       # Skip if this is fork and no credentials are provided.
