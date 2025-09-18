@@ -17,15 +17,15 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-bullseye`, `1.89-bullseye`, `1.89.0-bullseye`, `bullseye`][303]
-- [`1-slim-bullseye`, `1.89-slim-bullseye`, `1.89.0-slim-bullseye`, `slim-bullseye`][304]
-- [`1-bookworm`, `1.89-bookworm`, `1.89.0-bookworm`, `bookworm`][305]
-- [`1-slim-bookworm`, `1.89-slim-bookworm`, `1.89.0-slim-bookworm`, `slim-bookworm`][306]
-- [`1-trixie`, `1.89-trixie`, `1.89.0-trixie`, `trixie`, `1`, `1.89`, `1.89.0`, `latest`][307]
-- [`1-slim-trixie`, `1.89-slim-trixie`, `1.89.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.89-slim`, `1.89.0-slim`, `slim`][308]
-- [`1-alpine3.20`, `1.89-alpine3.20`, `1.89.0-alpine3.20`, `alpine3.20`][309]
-- [`1-alpine3.21`, `1.89-alpine3.21`, `1.89.0-alpine3.21`, `alpine3.21`][310]
-- [`1-alpine3.22`, `1.89-alpine3.22`, `1.89.0-alpine3.22`, `alpine3.22`, `1-alpine`, `1.89-alpine`, `1.89.0-alpine`, `alpine`][311]
+- [`1-bullseye`, `1.90-bullseye`, `1.90.0-bullseye`, `bullseye`][303]
+- [`1-slim-bullseye`, `1.90-slim-bullseye`, `1.90.0-slim-bullseye`, `slim-bullseye`][304]
+- [`1-bookworm`, `1.90-bookworm`, `1.90.0-bookworm`, `bookworm`][305]
+- [`1-slim-bookworm`, `1.90-slim-bookworm`, `1.90.0-slim-bookworm`, `slim-bookworm`][306]
+- [`1-trixie`, `1.90-trixie`, `1.90.0-trixie`, `trixie`, `1`, `1.90`, `1.90.0`, `latest`][307]
+- [`1-slim-trixie`, `1.90-slim-trixie`, `1.90.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.90-slim`, `1.90.0-slim`, `slim`][308]
+- [`1-alpine3.20`, `1.90-alpine3.20`, `1.90.0-alpine3.20`, `alpine3.20`][309]
+- [`1-alpine3.21`, `1.90-alpine3.21`, `1.90.0-alpine3.21`, `alpine3.21`][310]
+- [`1-alpine3.22`, `1.90-alpine3.22`, `1.90.0-alpine3.22`, `alpine3.22`, `1-alpine`, `1.90-alpine`, `1.90.0-alpine`, `alpine`][311]
 
 
 ### beta
