@@ -151,7 +151,7 @@ jobs:
         if: ${{ steps.skip.outputs.no == 'true'
              && steps.artifact.outputs.exists == 'true' }}
 
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v6
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
         if: ${{ steps.skip.outputs.no == 'true'
