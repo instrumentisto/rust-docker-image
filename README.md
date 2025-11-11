@@ -17,15 +17,15 @@ Rust Docker Image
 
 Mirrors [official `rust` Docker images][1].
 
-- [`1-bullseye`, `1.91-bullseye`, `1.91.0-bullseye`, `bullseye`][303]
-- [`1-slim-bullseye`, `1.91-slim-bullseye`, `1.91.0-slim-bullseye`, `slim-bullseye`][304]
-- [`1-bookworm`, `1.91-bookworm`, `1.91.0-bookworm`, `bookworm`][305]
-- [`1-slim-bookworm`, `1.91-slim-bookworm`, `1.91.0-slim-bookworm`, `slim-bookworm`][306]
-- [`1-trixie`, `1.91-trixie`, `1.91.0-trixie`, `trixie`, `1`, `1.91`, `1.91.0`, `latest`][307]
-- [`1-slim-trixie`, `1.91-slim-trixie`, `1.91.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.91-slim`, `1.91.0-slim`, `slim`][308]
-- [`1-alpine3.20`, `1.91-alpine3.20`, `1.91.0-alpine3.20`, `alpine3.20`][309]
-- [`1-alpine3.21`, `1.91-alpine3.21`, `1.91.0-alpine3.21`, `alpine3.21`][310]
-- [`1-alpine3.22`, `1.91-alpine3.22`, `1.91.0-alpine3.22`, `alpine3.22`, `1-alpine`, `1.91-alpine`, `1.91.0-alpine`, `alpine`][311]
+- [`1-bullseye`, `1.91-bullseye`, `1.91.1-bullseye`, `bullseye`][303]
+- [`1-slim-bullseye`, `1.91-slim-bullseye`, `1.91.1-slim-bullseye`, `slim-bullseye`][304]
+- [`1-bookworm`, `1.91-bookworm`, `1.91.1-bookworm`, `bookworm`][305]
+- [`1-slim-bookworm`, `1.91-slim-bookworm`, `1.91.1-slim-bookworm`, `slim-bookworm`][306]
+- [`1-trixie`, `1.91-trixie`, `1.91.1-trixie`, `trixie`, `1`, `1.91`, `1.91.1`, `latest`][307]
+- [`1-slim-trixie`, `1.91-slim-trixie`, `1.91.1-slim-trixie`, `slim-trixie`, `1-slim`, `1.91-slim`, `1.91.1-slim`, `slim`][308]
+- [`1-alpine3.20`, `1.91-alpine3.20`, `1.91.1-alpine3.20`, `alpine3.20`][309]
+- [`1-alpine3.21`, `1.91-alpine3.21`, `1.91.1-alpine3.21`, `alpine3.21`][310]
+- [`1-alpine3.22`, `1.91-alpine3.22`, `1.91.1-alpine3.22`, `alpine3.22`, `1-alpine`, `1.91-alpine`, `1.91.1-alpine`, `alpine`][311]
 
 
 ### beta
