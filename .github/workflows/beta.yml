@@ -25,7 +25,7 @@ jobs:
           - trixie-slim
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Check upstream version changed
         id: upstream
@@ -147,7 +147,7 @@ jobs:
         with:
           name: build-${{ matrix.os }}-${{ github.run_number }}
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ steps.skip.outputs.no == 'true'
              && steps.artifact.outputs.exists == 'true' }}
 
