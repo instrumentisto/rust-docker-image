@@ -9,7 +9,7 @@ env:
   NAME: rust
   REGISTRY_AUTH_FILE: ./auth.json
   SKOPEO_LATEST: true
-  VERSION: 1.92.0
+  VERSION: 1.93.0
 
 jobs:
   copy:
