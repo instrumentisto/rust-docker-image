@@ -20,7 +20,6 @@ jobs:
           - alpine3.23
           - alpine3.22
           - alpine3.21
-          - alpine3.20
           - bookworm
           - bookworm-slim
           - bullseye
@@ -42,10 +41,6 @@ jobs:
             tags: |
               nightly-alpine3.21-<ver>
               nightly-alpine3.21
-          - os: alpine3.20
-            tags: |
-              nightly-alpine3.20-<ver>
-              nightly-alpine3.20
           - os: bookworm
             tags: |
               nightly-bookworm-<ver>
