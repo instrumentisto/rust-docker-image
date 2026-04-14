@@ -10,6 +10,15 @@ Rust Docker Image
 
 
 
+## Status
+
+__PROJECT IS CLOSED AND ARCHIVED. NO MAINTAINING WILL BE CONTINUED.__
+
+Consider to use [official `rust`](https://hub.docker.com/_/rust) and [`rustlang/rust:nightly` Docker images](https://hub.docker.com/r/rustlang/rust) instead ([source repo](https://github.com/rust-lang/docker-rust)).
+
+
+
+
 ## Supported tags and respective `Dockerfile` links
 
 
